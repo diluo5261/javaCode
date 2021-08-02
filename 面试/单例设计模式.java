@@ -1,3 +1,4 @@
+*****************************饿汉式1**********************************
 class Bank{
 	
 	//1.私化类的构造器
@@ -15,7 +16,7 @@ class Bank{
 	}
 }
 
-
+*****************************饿汉式2**********************************
 class Order{
 	
 	//1.私化类的构造器
@@ -36,7 +37,7 @@ class Order{
 		return instance;
 	}
 }
-
+*****************************饿汉式3**********************************
 class Order{
 	
 	//1.私化类的构造器
@@ -45,4 +46,28 @@ class Order{
 	}
 	
 	public static final Order instance = new Order();	
+}
+
+
+*****************************懒汉式**********************************
+class Order{
+	
+	//1.私化类的构造器
+	private Order(){
+		
+	}
+	
+	//2.声明当前类对象，没初始化
+	//4.此对象也必须声明为static的
+	private static Order instance = null;
+	
+	//3.声明public、static的返回当前类对象的方法
+	public static Order getInstance(){
+		
+		if(instance == null){
+			
+			instance = new Order();
+		}
+		return instance;
+	}
 }
