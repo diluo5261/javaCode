@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+<form action = "http://www.baidu.com" nethod="get">
+    <input type ="hidden" name = "action" value="login"/>
+    用户名称: <input type = "text" value ="默认值" name = "nameuser"> <br/>
+
+    用户密码: <input type="password" value="******"><br/>
+
+    确认密码:<input type ="password" value = "******"> <br/>
+
+    选择性别:<input type ="radio" checked = "checked" name = "sex"> 男  <input type="radio" name = "sex"> 女 <br/>
+
+    选择爱好:<input type = "checkbox"> java <input type = "checkbox"> javaScript <input type = "checkbox"> c++ <br>
+    国籍:<select>
+    <option> -- 请选择国籍--</option>
+    <option selected = "selected"> 中国</option>
+    <option>美国</option>
+    <option> 日本</option>
+</select>
+    <br/>
+
+    自我评价:<textarea rows = "10" cols = "20"> 默认值 </textarea><br/>
+
+    <input type = "submit"/>
+
+<input type = "reset" value = "重置"/>
+
+
+
+</form>
+
+
+</body>
+</html>
