@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/06_html/06_html.iml" filepath="$PROJECT_DIR$/06_html/06_html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaweb_ITCast.iml" filepath="$PROJECT_DIR$/javaweb_ITCast.iml" />
+    </modules>
+  </component>
+</project>
