@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例三注册页面html完成</title>
+</head>
+<body>
+<!--定义表单-->
+<form>
+    <table border = "1" align="center" height=""500>
+<!--        第一行注册信息-->
+        <tr>
+            <td><label for="username">用户名 : </label>></td>
+            <td><input type = "text" name = "username" id ="username" placeholder="请输入用户名"></td>
+        </tr>
+<!--第二行 密码-->
+        <tr>
+            <td><label for="password">密码</label>></td>
+            <td><input  type="password" placeholder="请输入密码" id = "password"></td>
+        </tr>
+<!--第三行 输入Email-->
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type ="email" name="email" id = "email" placeholder="请输入邮箱"></td>
+
+        </tr>
+<!--第四行 输入姓名-->
+        <tr>
+            <td><label for="name">姓名:</label></td>
+            <td><input type ="text" name="name" id = "name" placeholder="请输入姓名"></td>
+        </tr>
+
+        <!--第五行 输入手机号-->
+        <tr>
+            <td><label for="phonenumber">手机号:</label></td>
+            <td><input type ="text" name="phonenumber" id = "phonenumber" placeholder="请输入手机号"></td>
+        </tr>
+
+        <!--第六行 选择性别-->
+        <tr>
+            <td>性别:</td>
+            <td><input type ="radio" name="gender" value ="male" checked = "checked">男
+            <input type ="radio" name="gender"  value = "female">女</td>
+        </tr>
+
+        <!--第七行 出生日期-->
+        <tr>
+            <td><label for="data">出生日期:</label></td>
+            <td><input type ="date" name="data" id = "data" placeholder="请输入姓名"></td>
+        </tr>
+
+        <!--第八行 验证码-->
+        <tr >
+            <td><label for="code">验证码:</label></td>
+            <td><input type ="text" name="code" id = "code" placeholder="验证码"> <img src ="image/verify_code.jpg"></td>
+        </tr>
+
+        <!--第九行 注册-->
+        <tr>
+
+            <td colspan="2" align="center">
+                <input type ="submit" value = "注册" ">
+            </td>
+        </tr>
+
+    </table>
+
+
+
+</form>
+
+</body>
+</html>
