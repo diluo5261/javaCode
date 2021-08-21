@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id = "openBtn" type = "button" value = "打开新的窗口">
+<input id = "closeBtn" type = "button" value = "不安比窗口">
+
+
+<script>
+    var newwindow ;
+var openBtn = document.getElementById("openBtn");
+openBtn.onclick = function () {
+    //打开新的窗口
+    newwindow = open("https://www.baidu.com");
+}
+
+var closeBtn = document.getElementById("closeBtn");
+closeBtn.onclick = function () {
+    //window.close(); 默认是window调用
+    newwindow.close();
+
+}
+
+setTimeout("fun()",2000);
+setTimeout(fun,3000);
+
+    function fun(){
+        alert("boom~~")
+    }
+
+</script>
+
+</body>
+</html>
