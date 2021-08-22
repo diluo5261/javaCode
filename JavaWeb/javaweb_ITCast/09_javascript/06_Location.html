@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "button" value="刷新" id=" btn">
+<input type = "button" value = "跳转" id = "skip">
+
+
+<script>
+  //获取按钮
+  var btn = document.getElementById(" btn");
+  btn.onclick = function (){
+      //页面刷新
+      location.reload();
+
+  }
+
+  //获取href
+  var href = location.href;
+  alert(href);
+
+  //点击按钮,跳转到百度
+  var skip = document.getElementById("skip");
+  skip.onclick = function (){
+      location.href = "https://www.baidu.com";
+  }
+
+
+</script>
+
+</body>
+</html>

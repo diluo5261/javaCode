@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--
+        1、全选
+            获取所有的checkbox
+            遍历cb吗，设置每一个cb状态为选中
+
+    -->
+    <script>
+        //1、在页面加载完后绑定事件
+        window.onload = function (){
+            document.getElementById("selectAll").onclick = function (){
+                //1、获取所有的checkbox
+                var hobbys = document.getElementsByName("hobby");
+                for(var i=0;i<hobbys.length;i++){
+                    //设置每一个hobbys为选中
+                    hobbys[i].checked = true;
+                }
+            }
+
+            //全不选
+            document.getElementById("unSelectAll").onclick = function (){
+                //获取所有的checkbox
+                var hobbys = document.getElementsByName("hobby");
+                for(var i=0;i<hobbys.length;i++){
+                    hobbys[i].checked = false;
+
+                }
+            }
+
+            //反选
+            document.getElementById("selectRev").onclick = function (){
+                var hobbys = document.getElementsByName("hobby");
+                for(var i=0;i<hobbys.length;i++){
+                    hobbys[i].checked = !hobbys[i].checked;
+                }
+            }
+
+            document.getElementById("firstCB").onclick = function (){
+                var hobbys = document.getElementsByName("hobby");
+                for(var i=0;i<hobbys.length;i++){
+                    hobbys[i].checked = this.checked;
+                }
+            }
+
+            //给所有的tr绑定鼠标移动到元素之上，和移除元素之上
+
+            var trs = document.getElementsByName("hobby");
+            for (var i=0;i<trs.length;i++){
+                trs[i].onmouseover = function (){
+                        this.className = "over";
+                }
+
+                trs[i].onmouseout = function (){
+                    this.className = "over";
+                }
+            }
+
+
+        }
+
+
+
+
+    </script>
+    <style>
+        .out{
+            background-color: white;
+        }
+
+        .over{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<input type = "checkbox" name = "hobby" id="firstCB"> 篮球
+<input type = "checkbox" name = "hobby"> java
+<input type = "checkbox" name = "hobby"> 篮球
+<input type = "checkbox" name = "hobby"> java
+
+<div>
+<input type = "button" id="selectAll" value ="全选">
+<input type = "button" id="unSelectAll" value ="全不选">
+<input type = "button" id="selectRev" value ="反选">
+</div>
+</body>
+</html>
