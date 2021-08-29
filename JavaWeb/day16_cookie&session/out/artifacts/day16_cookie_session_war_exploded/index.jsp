@@ -11,6 +11,12 @@
     <title>$Title$</title>
   </head>
   <body>
+  <%
+    System.out.println("hello world");
+    String contextPath = request.getContextPath();
+    response.getWriter().write("666");
+
+  %>
   $END$
   </body>
 </html>

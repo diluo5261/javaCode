@@ -9,7 +9,11 @@ import java.io.IOException;
 public class CookieDemo5 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //创建新的cookie
+        Cookie c1 = new Cookie("name","张三");
 
+        //发送cookie
+        response.addCookie(c1);
     }
 
     @Override
