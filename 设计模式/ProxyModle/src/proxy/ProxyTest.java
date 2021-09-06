@@ -34,8 +34,11 @@ public class ProxyTest {
                 if (method.getName().contains("sale")){
                     double money = (double)args[0];
                     money = money*0.85;
+                    System.out.println("专车接送");
                     Object obj = method.invoke(lenovo, money);
-                    return obj;
+                    System.out.println("免费送货");
+                    //增强返回值
+                    return obj+"鼠标垫";
                 }else{
                     Object obj = method.invoke(lenovo, args);
                     return obj;
