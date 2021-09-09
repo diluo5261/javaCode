@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            //1.获取name对象,绑定click事件
+            $("#name").click(function () {
+                alert("点击事件");
+            });
+
+            //给name绑定鼠标移动到元素之上事件.绑定鼠标移除事件
+            $("#name").mouseover(function () {
+                alert("鼠标来了");
+            });
+
+            //给name绑定鼠标移出的事件
+            $("#name").mouseout(function () {
+                alert("鼠标离开");
+            });
+
+            //如果有多个绑定事件,可以链式编程,简化操作
+            $("#name").mouseover(function () {
+                alert("鼠标来了");
+            }).mouseout(function () {
+                alert("鼠标离开");
+            })
+        })
+
+    </script>
+</head>
+<body>
+<input id="name" type="text" value="绑定点击事件">
+</body>
+</html>
