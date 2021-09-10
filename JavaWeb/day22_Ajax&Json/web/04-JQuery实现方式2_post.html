@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+       $(function () {
+           $.post("ajaxServlet",{"name":"tom"},function (data) {
+               alert(data);
+           }),"json";
+
+       })
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
