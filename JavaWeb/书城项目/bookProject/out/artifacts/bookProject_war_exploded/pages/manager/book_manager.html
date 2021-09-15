@@ -11,9 +11,9 @@
 			<img class="logo_img" alt="" src="../../static/img/logo.gif" >
 			<span class="wel_word">图书管理系统</span>
 			<div>
-				<a href="book_manager.html">图书管理</a>
-				<a href="order_manager.html">订单管理</a>
-				<a href="../../index.html">返回商城</a>
+				<a href="book_manager.jsp">图书管理</a>
+				<a href="order_manager.jsp">订单管理</a>
+				<a href="../../index.jsp">返回商城</a>
 			</div>
 	</div>
 	
@@ -33,7 +33,7 @@
 				<td>霍金</td>
 				<td>200</td>
 				<td>400</td>
-				<td><a href="book_edit.html">修改</a></td>
+				<td><a href="book_edit.jsp">修改</a></td>
 				<td><a href="#">删除</a></td>
 			</tr>	
 			
@@ -43,7 +43,7 @@
 				<td>霍金</td>
 				<td>200</td>
 				<td>400</td>
-				<td><a href="book_edit.html">修改</a></td>
+				<td><a href="book_edit.jsp">修改</a></td>
 				<td><a href="#">删除</a></td>
 			</tr>	
 			
@@ -53,7 +53,7 @@
 				<td>霍金</td>
 				<td>200</td>
 				<td>400</td>
-				<td><a href="book_edit.html">修改</a></td>
+				<td><a href="book_edit.jsp">修改</a></td>
 				<td><a href="#">删除</a></td>
 			</tr>	
 			
@@ -63,7 +63,7 @@
 				<td>霍金</td>
 				<td>200</td>
 				<td>400</td>
-				<td><a href="book_edit.html">修改</a></td>
+				<td><a href="book_edit.jsp">修改</a></td>
 				<td><a href="#">删除</a></td>
 			</tr>	
 			
@@ -74,7 +74,7 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				<td><a href="book_edit.html">添加图书</a></td>
+				<td><a href="book_edit.jsp">添加图书</a></td>
 			</tr>	
 		</table>
 	</div>
