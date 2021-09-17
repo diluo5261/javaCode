@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>书城首页</title>
-<link type="text/css" rel="stylesheet" href="static/css/style.css" >
+	<%--		静态包含 base 标签 css样式  jQuery文件--%>
+	<%@include file="/pages/common/head.jsp"%>
 </head>
 <body>
 	
@@ -16,7 +17,7 @@
 				<a href="pages/user/login.jsp">登录</a> |
 				<a href="pages/user/regist.jsp">注册</a> &nbsp;&nbsp;
 				<a href="pages/cart/cart.jsp">购物车</a>
-				<a href="pages/manager/manager.html">后台管理</a>
+				<a href="pages/manager/manager.jsp">后台管理</a>
 			</div>
 	</div>
 	<div id="main">

@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>结算页面</title>
+<title>后台管理</title>
 
 	<%--		静态包含 base 标签 css样式  jQuery文件--%>
 	<%@include file="/pages/common/head.jsp"%>
@@ -19,15 +19,13 @@
 	
 	<div id="header">
 			<img class="logo_img" alt="" src="../../static/img/logo.gif" >
-			<span class="wel_word">结算</span>
-		<%@include file="/pages/common/login_success_menu.jsp"%>>
+			<span class="wel_word">后台管理系统</span>
+		<%--		静态包含 manager 管理模块的菜单--%>
+		<%@include file="/pages/common/manager_menu.jsp"%>
 	</div>
 	
 	<div id="main">
-		
-		<h1>你的订单已结算，订单号为2937474382928484747</h1>
-		
-	
+		<h1>欢迎管理员进入后台管理系统</h1>
 	</div>
 
 	<%--		静态包含页脚内容--%>

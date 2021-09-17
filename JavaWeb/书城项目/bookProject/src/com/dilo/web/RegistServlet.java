@@ -27,7 +27,10 @@ public class RegistServlet extends HttpServlet {
             //相等,检查用户名是否正确
             if(userService.existsUsername(username)){
                 //不可用,返回注册页面
-                System.out.println("用户名"+username+"已存在");
+                req.setAttribute("msg","用户名已存在");
+                req.setAttribute("code",code);
+                req.setAttribute("username",username);
+                req.setAttribute("email",email);
                 req.getRequestDispatcher("/pages/user/regist.jsp").forward(req,resp);
             }else{
                 //可用,保存到数据库,跳转到注册成功页面
@@ -36,7 +39,12 @@ public class RegistServlet extends HttpServlet {
             }
         }else{
             //不相等,跳回注册页面
-            System.out.println("验证码错误!");
+
+            req.setAttribute("msg","验证码错误");
+            req.setAttribute("code",code);
+            req.setAttribute("username",username);
+            req.setAttribute("email",email);
+
             req.getRequestDispatcher("/pages/user/regist.jsp").forward(req,resp);
         }
     }
