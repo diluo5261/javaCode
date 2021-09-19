@@ -17,4 +17,14 @@ public class WebUtils {
 
         return bean;
     }
+
+
+    /**
+     * 将字符串转换成int类型的数字
+     * @param strInt
+     * @return
+     */
+    public static int parseInt(String strInt){
+        return Integer.parseInt(strInt);
+    }
 }

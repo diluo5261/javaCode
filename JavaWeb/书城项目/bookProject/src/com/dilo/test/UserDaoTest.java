@@ -1,11 +1,9 @@
 package com.dilo.test;
 
-import com.dilo.dao.impl.UserDao;
+import com.dilo.dao.UserDao;
 import com.dilo.dao.impl.UserDaoImple;
 import com.dilo.domain.User;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class UserDaoTest {
 

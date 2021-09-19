@@ -1,6 +1,6 @@
 package com.dilo.dao.impl;
 
-import com.dilo.dao.BaseDao;
+import com.dilo.dao.UserDao;
 import com.dilo.domain.User;
 
 public class UserDaoImple extends BaseDao implements UserDao {

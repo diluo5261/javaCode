@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -7,6 +8,18 @@
 
 	<%--		静态包含 base 标签 css样式  jQuery文件--%>
 	<%@include file="/pages/common/head.jsp"%>
+
+	<script>
+		$(function () {
+			$("a.deleteClass").click(function () {
+				//在事件的function函数中,有一个this对象.这个this对象,是当前正在响应事件的dom对象
+				//确认提示框弹出,确认
+
+				return confirm("确定删除"+$(this).parent().parent().find("td:first").text());
+			});
+		})
+
+	</script>
 
 </head>
 <body>
@@ -29,46 +42,21 @@
 				<td>库存</td>
 				<td colspan="2">操作</td>
 			</tr>		
-			<tr>
-				<td>时间简史</td>
-				<td>20.00</td>
-				<td>霍金</td>
-				<td>200</td>
-				<td>400</td>
-				<td><a href="book_edit.jsp">修改</a></td>
-				<td><a href="#">删除</a></td>
-			</tr>	
+
+			
+			<c:forEach items="${requestScope.books}" var="book">
 			
 			<tr>
-				<td>时间简史</td>
-				<td>20.00</td>
-				<td>霍金</td>
-				<td>200</td>
-				<td>400</td>
-				<td><a href="book_edit.jsp">修改</a></td>
-				<td><a href="#">删除</a></td>
-			</tr>	
-			
-			<tr>
-				<td>时间简史</td>
-				<td>20.00</td>
-				<td>霍金</td>
-				<td>200</td>
-				<td>400</td>
-				<td><a href="book_edit.jsp">修改</a></td>
-				<td><a href="#">删除</a></td>
-			</tr>	
-			
-			<tr>
-				<td>时间简史</td>
-				<td>20.00</td>
-				<td>霍金</td>
-				<td>200</td>
-				<td>400</td>
-				<td><a href="book_edit.jsp">修改</a></td>
-				<td><a href="#">删除</a></td>
-			</tr>	
-			
+				<td>${book.name}</td>
+				<td>${book.price}</td>
+				<td>${book.author}</td>
+				<td>${book.sales}</td>
+				<td>${book.stock}</td>
+				<td><a href="manager/bookServlet?action=getBook&id=${book.id}">修改</a></td>
+				<td><a class ="deleteClass" href="manager/bookServlet?action=delete&id=${book.id}">删除</a></td>
+			</tr>
+			</c:forEach>
+
 			<tr>
 				<td></td>
 				<td></td>
@@ -76,7 +64,7 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				<td><a href="book_edit.jsp">添加图书</a></td>
+				<td><a href="pages/manager/book_edit.jsp">添加图书</a></td>
 			</tr>	
 		</table>
 	</div>

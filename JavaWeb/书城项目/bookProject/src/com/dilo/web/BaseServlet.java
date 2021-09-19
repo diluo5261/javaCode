@@ -19,10 +19,15 @@ public class BaseServlet extends HttpServlet {
 
         //使用反射的方法实现
         try {
-            Method method = UserServlet.class.getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);
+            Method method = this.getClass().getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);
             method.invoke(this, req, resp);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req, resp);
     }
 }

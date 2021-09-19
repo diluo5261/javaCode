@@ -1,6 +1,6 @@
 package com.dilo.service.impl;
 
-import com.dilo.dao.impl.UserDao;
+import com.dilo.dao.UserDao;
 import com.dilo.dao.impl.UserDaoImple;
 import com.dilo.domain.User;
 import com.dilo.service.UserService;
