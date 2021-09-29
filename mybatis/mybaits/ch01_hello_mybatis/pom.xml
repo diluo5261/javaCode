@@ -29,7 +29,7 @@
     <dependency>
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis</artifactId>
-      <version>3.5.6</version>
+      <version>3.5.1</version>
     </dependency>
 
 <!--    mysql驱动-->
@@ -40,23 +40,19 @@
       <version>8.0.26</version>
     </dependency>
 
-
-
-
-
   </dependencies>
 
   <build>
-  <resources>
-    <resource>
-      <directory>src/main/java</directory><!--所在的目录-->
-      <includes><!--包括目录下的.properties,.xml 文件都会扫描到-->
-        <include>**/*.properties</include>
-        <include>**/*.xml</include>
-      </includes>
-      <filtering>false</filtering>
-    </resource>
-  </resources>
+<!--  <resources>-->
+<!--    <resource>-->
+<!--      <directory>src/main/java</directory>&lt;!&ndash;所在的目录&ndash;&gt;-->
+<!--      <includes>&lt;!&ndash;包括目录下的.properties,.xml 文件都会扫描到&ndash;&gt;-->
+<!--        <include>**/*.properties</include>-->
+<!--        <include>**/*.xml</include>-->
+<!--      </includes>-->
+<!--      <filtering>false</filtering>-->
+<!--    </resource>-->
+<!--  </resources>-->
   </build>
 
 
