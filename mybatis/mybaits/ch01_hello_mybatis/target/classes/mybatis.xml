@@ -6,10 +6,10 @@
 <configuration>
 
 <!--    控制mybatis 全局行为-->
-    <settings>
-<!--        设置mybatis输出日志-->
+    <!--<settings>
+&lt;!&ndash;        设置mybatis输出日志&ndash;&gt;
         <setting name="logImpl" value="STDOUT_LOGGING" />
-    </settings>
+    </settings>-->
 
 
     <!--    环境配置 : 数据库的连接信息

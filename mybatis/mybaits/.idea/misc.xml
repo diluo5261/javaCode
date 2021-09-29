@@ -4,10 +4,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/ch01_hello_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/ch02-mybatis-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/ch03-prox-dao/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

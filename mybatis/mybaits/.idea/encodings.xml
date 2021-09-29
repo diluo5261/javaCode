@@ -3,5 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ch01_hello_mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch01_hello_mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch02-mybatis-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch02-mybatis-dao/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch03-prox-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch03-prox-dao/src/main/resources" charset="UTF-8" />
   </component>
 </project>

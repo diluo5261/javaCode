@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ch01_hello_mybatis/ch01_hello_mybatis.iml" filepath="$PROJECT_DIR$/ch01_hello_mybatis/ch01_hello_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch02-mybatis-dao/ch02-mybatis-dao.iml" filepath="$PROJECT_DIR$/ch02-mybatis-dao/ch02-mybatis-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch03-prox-dao/ch03-prox-dao.iml" filepath="$PROJECT_DIR$/ch03-prox-dao/ch03-prox-dao.iml" />
     </modules>
   </component>
 </project>
