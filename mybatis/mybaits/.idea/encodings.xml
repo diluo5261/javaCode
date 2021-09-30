@@ -7,5 +7,11 @@
     <file url="file://$PROJECT_DIR$/ch02-mybatis-dao/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch03-prox-dao/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch03-prox-dao/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch04-param/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch04-param/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch05-return-result/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch05-return-result/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch06-dynamic-sql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch06-dynamic-sql/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -32,7 +32,7 @@ public class TestMyBatis {
         StudentDao dao = sqlSession.getMapper(StudentDao.class);
         int num = dao.insertStudent(new Student(145, "json", "json@163.com", 55));
         sqlSession.commit();
-        
+
         System.out.println("成功插入"+num + "条数据");
 
 
