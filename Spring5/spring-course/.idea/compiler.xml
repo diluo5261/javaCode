@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ch02-di-xml" />
         <module name="ch01-hello-spriing" />
+        <module name="ch03-di-anno" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ch01-hello-spriing" target="1.8" />
       <module name="ch02-di-xml" target="1.8" />
+      <module name="ch03-di-anno" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

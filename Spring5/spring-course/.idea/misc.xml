@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/ch01-hello-spriing/pom.xml" />
         <option value="$PROJECT_DIR$/ch02-di-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/ch03-di-anno/pom.xml" />
       </list>
     </option>
   </component>
