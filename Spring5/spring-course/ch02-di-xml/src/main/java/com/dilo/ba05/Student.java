@@ -1,4 +1,4 @@
-package com.dilo.ba04;
+package com.dilo.ba05;
 
 public class Student {
 

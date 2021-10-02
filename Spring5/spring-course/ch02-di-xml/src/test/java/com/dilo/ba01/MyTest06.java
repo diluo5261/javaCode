@@ -1,14 +1,14 @@
 package com.dilo.ba01;
 
-import com.dilo.ba04.Student;
+import com.dilo.ba06.Student;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MyTest04 {
+public class MyTest06 {
 
     @Test
     public void test(){
-        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("ba04/applicationContext.xml");
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("ba06/spring_total.xml");
 
         Student student = (Student) classPathXmlApplicationContext.getBean("Student");
 

@@ -28,11 +28,13 @@
                 简单类型属性赋值
             </bean>
 
+            注意:再byType中,在xml配置文件中声明bean只能有一个符合条件的,多余一个是错误的
+
 
 -->
 
-<!--    byName-->
-    <bean id="Student" class="com.dilo.ba04.Student" autowire="byName">
+<!--    byType-->
+    <bean id="Student" class="com.dilo.ba05.Student" autowire="byType">
 
         <property name="name" value="tom"/>
         <property name="age" value="51"/>
@@ -43,7 +45,7 @@
 
     </bean>
 
-    <bean name="school" class="com.dilo.ba04.School">
+    <bean name="myschool" class="com.dilo.ba05.School">
 
         <property name="name" value="大学"/>
         <property name="address" value="北京"/>

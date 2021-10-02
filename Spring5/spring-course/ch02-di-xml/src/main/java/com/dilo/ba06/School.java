@@ -1,4 +1,4 @@
-package com.dilo.ba04;
+package com.dilo.ba06;
 
 public class School {
     private String name;

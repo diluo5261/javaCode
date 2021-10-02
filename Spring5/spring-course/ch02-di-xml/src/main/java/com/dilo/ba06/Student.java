@@ -1,4 +1,4 @@
-package com.dilo.ba04;
+package com.dilo.ba06;
 
 public class Student {
 
@@ -7,6 +7,8 @@ public class Student {
 
     //声明一个引用数据类型
     private School school;
+
+
 
     public Student() {
         System.out.println("Student 无参构造方法");
