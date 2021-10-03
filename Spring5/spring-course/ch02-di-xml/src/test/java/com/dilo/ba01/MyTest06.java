@@ -8,7 +8,7 @@ public class MyTest06 {
 
     @Test
     public void test(){
-        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("ba06/spring_total.xml");
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("ba06/total.xml");
 
         Student student = (Student) classPathXmlApplicationContext.getBean("Student");
 
