@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/ch03-di-anno/pom.xml" />
         <option value="$PROJECT_DIR$/ch05-aop-leadin/pom.xml" />
         <option value="$PROJECT_DIR$/ch06-aop-aspectJ/pom.xml" />
+        <option value="$PROJECT_DIR$/ch07-spring-mybatis/pom.xml" />
       </list>
     </option>
   </component>
