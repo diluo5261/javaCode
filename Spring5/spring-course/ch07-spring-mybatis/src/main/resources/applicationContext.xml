@@ -16,6 +16,19 @@
     </bean>
 
 <!--    声明的是mybatis中提供的SqlSessionFactoryBean类，这个类内部创建SqlSessionFactory的-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="myDateSource"/>
+<!--        mybatis主配置文件的位置
+    configLocation属性是Resource类型,读取配置文件
+    它的赋值,使用value
+
+-->
+        <property name="configLocation" value="classpath:mybatis.xml"/>
 
 
-</benis>
+
+    </bean>
+
+
+
+</beans>
