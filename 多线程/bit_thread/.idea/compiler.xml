@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="0927_thread" />
+        <module name="1019_thread" />
+        <module name="1015_thread" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="0927_thread" target="1.8" />
+      <module name="1015_thread" target="1.5" />
+      <module name="1019_thread" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
