@@ -22,6 +22,7 @@ public class Demo2 {
         System.out.println("请输入你要复制的文件目标路径(绝对路径):");
         String destPath = scan.next();
 
+        //要求这个destFile 必须不能存在
         File destFile = new File(destPath);
         if (destFile.exists()){
             System.out.println("目标文件的路径已经存在");

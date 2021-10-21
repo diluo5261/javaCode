@@ -8,7 +8,7 @@ public class ReadAllFile {
     public static List<String> result = new ArrayList<>();
     public static void getAllFiles(String basePath){
         File file = new File(basePath);
-        if (file.isFile()){
+        if (!file.isDirectory()){
             result.add(basePath);
             return;
         }else if(file.isDirectory()){
@@ -18,11 +18,13 @@ public class ReadAllFile {
                 getAllFiles(basePath + "/"+fil);
 
             }
+        }else{
+            return;
         }
 
     }
     public static void main(String[] args) {
-        getAllFiles(".");
+        getAllFiles("D:");
 
         for (String s : result){
             System.out.println(s);
