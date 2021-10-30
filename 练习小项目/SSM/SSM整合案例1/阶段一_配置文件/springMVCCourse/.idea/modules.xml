@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ch01-hello-springmvc/ch01-hello-spring.iml" filepath="$PROJECT_DIR$/ch01-hello-springmvc/ch01-hello-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch02-requestmapping/ch02-mapping.iml" filepath="$PROJECT_DIR$/ch02-requestmapping/ch02-mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch03_receiveparam/ch03_receiveparam.iml" filepath="$PROJECT_DIR$/ch03_receiveparam/ch03_receiveparam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch04_return/ch04_return.iml" filepath="$PROJECT_DIR$/ch04_return/ch04_return.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch05-url-pattern/ch05-url-pattern.iml" filepath="$PROJECT_DIR$/ch05-url-pattern/ch05-url-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch06-path/ch06-path.iml" filepath="$PROJECT_DIR$/ch06-path/ch06-path.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch07-ssm/ch07-ssm.iml" filepath="$PROJECT_DIR$/ch07-ssm/ch07-ssm.iml" />
+    </modules>
+  </component>
+</project>
