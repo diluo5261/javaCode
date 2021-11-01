@@ -25,6 +25,7 @@ public class UdpEchoServer {
     public void start() throws IOException {
         System.out.println("服务器启动!");
 
+        //服务器一般的就是持续运行的(7*24)
         while(true){
             /*
             1.读取请求,当前服务器不知道客户端啥时候发来请求,receive方法也会阻塞
