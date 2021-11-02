@@ -51,13 +51,22 @@ public class TcpEchoService {
                     System.out.println(log);
                     break;
                 }
-                String request = scan.nextLine();
+
+                /*byte[] buffer = new byte[1024];
+                int len;
+                while((len = inputStream.read(buffer)) != -1){
+                    String str = new String(buffer,0,len);
+                    System.out.print(str);
+                }*/
+
+                String request = scan.next();
                 //2.根据请i去计算响应
                 String response = process(request);
 
                 //3.把响应写回给客户端
                 PrintWriter writer = new PrintWriter(outputStream);
-                writer.print(response);
+                writer.println(response);
+                writer.flush();
                 log = String.format("[%s : %d] req : %s ;resp : %s",clientSocket.getInetAddress().toString(),clientSocket.getPort(),request,response);
                 System.out.println(log);
 
@@ -83,7 +92,7 @@ public class TcpEchoService {
     }
 
     public static void main(String[] args) throws IOException {
-        TcpEchoService tcpEchoService = new TcpEchoService(9090);
+        TcpEchoService tcpEchoService = new TcpEchoService(8888);
         tcpEchoService.start();
     }
 }

@@ -34,7 +34,8 @@ public class TcpEchoClient {
                 }
                 //2.把这个读取的内容构造成请求,发送给服务器
                 PrintWriter writer = new PrintWriter(outputStream);
-                writer.print(request);
+                writer.println(request);
+                writer.flush();
 
                 //3.从服务器获取响应并解析
                 Scanner responseScan = new Scanner(inputStream);
