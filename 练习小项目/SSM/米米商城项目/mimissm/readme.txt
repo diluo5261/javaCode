@@ -1,7 +1,8 @@
 搭建SSM项目的步骤:
 1、新建 maven项目
 2、添加 SSM 所有的依赖
-3、拷贝jdbc。properties到resource目录下
+3、拷贝jdbc.properties到resource目录下
+
 4、新建 applicationContext_dao.xml文件，进行数据访问层的配置
 5、新建 applicationContext——service。xml文件，进行业务逻辑层的配置
 6、新建 springmvc。xml文件，配置springmvc的框架
