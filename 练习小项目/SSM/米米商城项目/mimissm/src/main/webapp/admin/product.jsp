@@ -106,7 +106,7 @@
                                     <%--&nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/admin/product?flag=one&pid=${p.pId}">修改</a></td>--%>
                                 <td>
                                     <button type="button" class="btn btn-info "
-                                            onclick="one(${p.pId},${info.pageNum})">编辑
+                                            onclick="one(${p.pId})">编辑
                                     </button>
                                     <button type="button" class="btn btn-warning" id="mydel"
                                             onclick="del(${p.pId})">删除
@@ -207,14 +207,27 @@ alert(str+"11111111");
     }
     //单个删除
     function del(pid) {
+        //删除必须弹框提示
         if (confirm("确定删除吗")) {
           //向服务器提交请求完成删除
-            window.location="${pageContext.request.contextPath}/prod/delete.action?pid="+pid;
+          <%--  window.location="${pageContext.request.contextPath}/prod/delete.action?pid="+pid;--%>
+            //发出ajax请求,进行删除操作
+            $.ajax({
+               url: "${pageContext.request.contextPath}/prod/delete.action",
+                data: {"pid":pid},
+                type: "post",
+                dataType:"test",
+                success:function (msg) {
+                   alert(msg);
+                   $("#table").load("http://localhost:8080/mimissm/admin/product.jsp #table" );
+
+                }
+            });
         }
     }
 
-    function one(pid, ispage) {
-        location.href = "${pageContext.request.contextPath}/prod/one.action?pid=" + pid + "&page=" + ispage;
+    function one(pid) {
+        location.href = "${pageContext.request.contextPath}/prod/one.action?pid=" + pid;
     }
 </script>
 <!--分页的AJAX实现-->
@@ -222,13 +235,13 @@ alert(str+"11111111");
     function ajaxsplit(page) {
         //异步ajax分页请求
         $.ajax({
-        url:"${pageContext.request.contextPath}/prod/ajaxsplit.action",
+        url:"${pageContext.request.contextPath}/prod/ajaxSplit.action",
             data:{"page":page},
             type:"post",
             success:function () {
                 //重新加载分页显示的组件table
                 //location.href---->http://localhost:8080/admin/login.action
-                $("#table").load("http://localhost:8080/admin/product.jsp #table");
+                $("#table").load("http://localhost:8080/mimissm/admin/product.jsp #table");
             }
         })
     };

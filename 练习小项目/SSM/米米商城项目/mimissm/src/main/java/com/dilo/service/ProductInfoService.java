@@ -12,4 +12,16 @@ public interface ProductInfoService {
     List<ProductInfo> getAll();
 
     PageInfo splitPage(int pageNum,int pageSize);
+
+    //增加商品
+    int save(ProductInfo info);
+
+    //按照主键id查询商品
+    ProductInfo getById(int pid);
+
+    //更新商品
+    int update(ProductInfo info);
+
+    //单个商品的删除
+    int delete(int pid);
 }
