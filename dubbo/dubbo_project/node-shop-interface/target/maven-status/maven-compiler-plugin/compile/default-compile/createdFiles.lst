@@ -1,0 +1,4 @@
+com\dilo\service\OrderService.class
+com\dilo\domain\Address.class
+com\dilo\service\UserInfoService.class
+com\dilo\domain\Order.class

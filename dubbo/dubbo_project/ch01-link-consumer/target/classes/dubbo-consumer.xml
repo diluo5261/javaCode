@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    声明消费者的名称:保证唯一性-->
+    <dubbo:application name="ch01-link-consumer" />
+
+<!--
+    引用远程服务接口:
+    id : 远程服务接口对象的名称
+    interface : 调用远程接口的全限定类名
+    registry : 不使用注册中心,值为:N/A
+
+-->
+    <dubbo:reference id="userService" interface="com.dilo.service.UserService" url="dubbo://localhost:20880" registy="N/A"/>
+</beans>

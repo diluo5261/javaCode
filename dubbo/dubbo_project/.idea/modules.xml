@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ch01-link-consumer/ch01-link-consumer.iml" filepath="$PROJECT_DIR$/ch01-link-consumer/ch01-link-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch01-link-userservice-provider/ch01-link-userservice-provider.iml" filepath="$PROJECT_DIR$/ch01-link-userservice-provider/ch01-link-userservice-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/link-main-web/link-main-web.iml" filepath="$PROJECT_DIR$/link-main-web/link-main-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/link-orderservice-provide/link-orderservice-provide.iml" filepath="$PROJECT_DIR$/link-orderservice-provide/link-orderservice-provide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-shop-interface/node-shop-interface.iml" filepath="$PROJECT_DIR$/node-shop-interface/node-shop-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-shop-orderservice/node-shop-orderservice.iml" filepath="$PROJECT_DIR$/node-shop-orderservice/node-shop-orderservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-shop-userservice/node-shop-userservice.iml" filepath="$PROJECT_DIR$/node-shop-userservice/node-shop-userservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-shop-web/node-shop-web.iml" filepath="$PROJECT_DIR$/node-shop-web/node-shop-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zk-node-shop-orderservice/zk-node-shop-orderservice.iml" filepath="$PROJECT_DIR$/zk-node-shop-orderservice/zk-node-shop-orderservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zk-node-shop-userservice/zk-node-shop-userservice.iml" filepath="$PROJECT_DIR$/zk-node-shop-userservice/zk-node-shop-userservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zk-node-shop-web/zk-node-shop-web.iml" filepath="$PROJECT_DIR$/zk-node-shop-web/zk-node-shop-web.iml" />
+    </modules>
+  </component>
+</project>
