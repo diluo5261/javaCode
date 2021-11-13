@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/ch001_springboot_first/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch002_springboot_mvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch03_springboot_path/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch04_springboot_properties_yml_yaml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch05_springboot_allboth_properties/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch06_springboot_multi_enviroment_properties/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch06_springboot_multi_enviroment_properties/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch07_springboot_multi_enviroment_yml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch07_springboot_multi_enviroment_yml/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch08_springboot_customer_configer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch09_springboot_customer_configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch10_spring_jsp/src/main/java" charset="UTF-8" />
+  </component>
+</project>
