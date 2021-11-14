@@ -13,5 +13,12 @@
     <file url="file://$PROJECT_DIR$/ch08_springboot_customer_configer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch09_springboot_customer_configuration/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch10_spring_jsp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch11_springboot_mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch12_springboot_mybatis_2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch13_springboot_mybatis3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch14_springboot_transcation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch15_springboot_springmvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch15_springboot_springmvc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch16_springboot_RESTful/src/main/java" charset="UTF-8" />
   </component>
 </project>

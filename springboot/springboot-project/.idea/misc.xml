@@ -15,6 +15,12 @@
         <option value="$PROJECT_DIR$/ch08_springboot_customer_configer/pom.xml" />
         <option value="$PROJECT_DIR$/ch09_springboot_customer_configuration/pom.xml" />
         <option value="$PROJECT_DIR$/ch10_spring_jsp/pom.xml" />
+        <option value="$PROJECT_DIR$/ch11_springboot_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/ch12_springboot_mybatis_2/pom.xml" />
+        <option value="$PROJECT_DIR$/ch13_springboot_mybatis3/pom.xml" />
+        <option value="$PROJECT_DIR$/ch14_springboot_transcation/pom.xml" />
+        <option value="$PROJECT_DIR$/ch15_springboot_springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/ch16_springboot_RESTful/pom.xml" />
       </list>
     </option>
   </component>

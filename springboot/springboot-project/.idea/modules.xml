@@ -12,6 +12,12 @@
       <module fileurl="file://$PROJECT_DIR$/ch08_springboot_customer_configer/ch08_springboot_customer_configer.iml" filepath="$PROJECT_DIR$/ch08_springboot_customer_configer/ch08_springboot_customer_configer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch09_springboot_customer_configuration/ch09_springboot_customer_configuration.iml" filepath="$PROJECT_DIR$/ch09_springboot_customer_configuration/ch09_springboot_customer_configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch10_spring_jsp/ch10_spring_jsp.iml" filepath="$PROJECT_DIR$/ch10_spring_jsp/ch10_spring_jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch11_springboot_mybatis/ch11_springboot_mybatis.iml" filepath="$PROJECT_DIR$/ch11_springboot_mybatis/ch11_springboot_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch12_springboot_mybatis_2/ch12_springboot_mybatis_2.iml" filepath="$PROJECT_DIR$/ch12_springboot_mybatis_2/ch12_springboot_mybatis_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch13_springboot_mybatis3/ch13_springboot_mybatis3.iml" filepath="$PROJECT_DIR$/ch13_springboot_mybatis3/ch13_springboot_mybatis3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch14_springboot_transcation/ch14_springboot_transcation.iml" filepath="$PROJECT_DIR$/ch14_springboot_transcation/ch14_springboot_transcation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch15_springboot_springmvc/ch15_springboot_springmvc.iml" filepath="$PROJECT_DIR$/ch15_springboot_springmvc/ch15_springboot_springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch16_springboot_RESTful/ch16_springboot_RESTful.iml" filepath="$PROJECT_DIR$/ch16_springboot_RESTful/ch16_springboot_RESTful.iml" />
     </modules>
   </component>
 </project>
