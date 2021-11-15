@@ -6,20 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ch09_springboot_customer_configuration" />
+        <module name="ch27_springboot_java_2" />
+        <module name="ch18_springboot_dubbo_consumer" />
         <module name="ch14_springboot_transcation" />
         <module name="ch03_springboot_path" />
         <module name="ch04_springboot_properties_yml_yaml" />
         <module name="ch001_springboot_first" />
-        <module name="ch06_springboot_multi_enviroment_properties" />
+        <module name="ch21_springboot_dubbo_ssm_provider" />
         <module name="ch15_springboot_springmvc" />
         <module name="ch002_springboot_mvc" />
-        <module name="ch12_springboot_mybatis_2" />
+        <module name="ch30_springboot_interceptor" />
         <module name="ch07_springboot_multi_enviroment_yml" />
         <module name="ch08_springboot_customer_configer" />
-        <module name="ch13_springboot_mybatis3" />
         <module name="ch10_spring_jsp" />
+        <module name="ch18_springboot_dubbo_provide" />
+        <module name="ch18_springboot_dubbo_interface" />
+        <module name="ch22_springboot_dubbo_ssm_consumer" />
+        <module name="ch09_springboot_customer_configuration" />
+        <module name="ch28_spirngboot_close_logo" />
+        <module name="ch20_spirngboot_dubbo_ssm_interface" />
+        <module name="ch26_springboot_java_1" />
+        <module name="ch06_springboot_multi_enviroment_properties" />
+        <module name="ch12_springboot_mybatis_2" />
+        <module name="ch13_springboot_mybatis3" />
         <module name="ch11_springboot_mybatis" />
+        <module name="ch17_springboot_redis" />
         <module name="ch05_springboot_allboth_properties" />
         <module name="ch16_springboot_RESTful" />
       </profile>
@@ -41,6 +52,18 @@
       <module name="ch14_springboot_transcation" target="1.8" />
       <module name="ch15_springboot_springmvc" target="1.8" />
       <module name="ch16_springboot_RESTful" target="1.8" />
+      <module name="ch17_springboot_redis" target="1.8" />
+      <module name="ch18_springboot_dubbo_consumer" target="1.8" />
+      <module name="ch18_springboot_dubbo_interface" target="8" />
+      <module name="ch18_springboot_dubbo_provide" target="1.8" />
+      <module name="ch18_springboot_dubbo_provider" target="1.8" />
+      <module name="ch20_spirngboot_dubbo_ssm_interface" target="8" />
+      <module name="ch21_springboot_dubbo_ssm_provider" target="1.8" />
+      <module name="ch22_springboot_dubbo_ssm_consumer" target="1.8" />
+      <module name="ch26_springboot_java_1" target="1.8" />
+      <module name="ch27_springboot_java_2" target="1.8" />
+      <module name="ch28_spirngboot_close_logo" target="1.8" />
+      <module name="ch30_springboot_interceptor" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -61,6 +84,17 @@
       <module name="ch14_springboot_transcation" options="-parameters" />
       <module name="ch15_springboot_springmvc" options="-parameters" />
       <module name="ch16_springboot_RESTful" options="-parameters" />
+      <module name="ch17_springboot_redis" options="-parameters" />
+      <module name="ch18_springboot_dubbo_consumer" options="-parameters" />
+      <module name="ch18_springboot_dubbo_interface" options="" />
+      <module name="ch18_springboot_dubbo_provide" options="-parameters" />
+      <module name="ch18_springboot_dubbo_provider" options="-parameters" />
+      <module name="ch21_springboot_dubbo_ssm_provider" options="-parameters" />
+      <module name="ch22_springboot_dubbo_ssm_consumer" options="-parameters" />
+      <module name="ch26_springboot_java_1" options="-parameters" />
+      <module name="ch27_springboot_java_2" options="-parameters" />
+      <module name="ch28_spirngboot_close_logo" options="-parameters" />
+      <module name="ch30_springboot_interceptor" options="-parameters" />
     </option>
   </component>
 </project>

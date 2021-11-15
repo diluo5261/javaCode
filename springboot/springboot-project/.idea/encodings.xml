@@ -20,5 +20,16 @@
     <file url="file://$PROJECT_DIR$/ch15_springboot_springmvc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch15_springboot_springmvc/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch16_springboot_RESTful/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch17_springboot_redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch18_springboot_dubbo_consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch18_springboot_dubbo_provide/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch21_springboot_dubbo_ssm_provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch21_springboot_dubbo_ssm_provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch22_springboot_dubbo_ssm_consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch22_springboot_dubbo_ssm_consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch26_springboot_java_1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch27_springboot_java_2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch28_spirngboot_close_logo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch30_springboot_interceptor/src/main/java" charset="UTF-8" />
   </component>
 </project>

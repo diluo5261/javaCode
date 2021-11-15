@@ -21,10 +21,22 @@
         <option value="$PROJECT_DIR$/ch14_springboot_transcation/pom.xml" />
         <option value="$PROJECT_DIR$/ch15_springboot_springmvc/pom.xml" />
         <option value="$PROJECT_DIR$/ch16_springboot_RESTful/pom.xml" />
+        <option value="$PROJECT_DIR$/ch17_springboot_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/ch18_springboot_dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/ch18_springboot_dubbo_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/ch18_springboot_dubbo_provide/pom.xml" />
+        <option value="$PROJECT_DIR$/ch18_springboot_dubbo_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/ch20_spirngboot_dubbo_ssm_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/ch21_springboot_dubbo_ssm_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/ch22_springboot_dubbo_ssm_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/ch26_springboot_java_1/pom.xml" />
+        <option value="$PROJECT_DIR$/ch27_springboot_java_2/pom.xml" />
+        <option value="$PROJECT_DIR$/ch28_spirngboot_close_logo/pom.xml" />
+        <option value="$PROJECT_DIR$/ch30_springboot_interceptor/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
