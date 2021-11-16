@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thrmelef.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>常见属性</title>
+</head>
+<body>
+
+<form action="/test1">
+    用户编号:<input type="text" name="id"/></br>
+    用户姓名:<input type="text" name="username"/></br>
+    用户年龄:<input type="text" name="age"/></br>
+
+    <input type="submit" value="提交">
+</form>
+
+<form th:action="@{/test1}">
+    用户编号:<input type="text" name="id"/></br>
+    用户姓名:<input type="text" name="username"/></br>
+    用户年龄:<input type="text" name="age"/></br>
+
+    <input type="submit" value="提交">
+
+
+
+</form>
+
+</body>
+</html>

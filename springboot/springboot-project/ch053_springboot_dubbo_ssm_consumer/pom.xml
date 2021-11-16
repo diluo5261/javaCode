@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>ch050_springboot_parent</artifactId>
+        <groupId>com.dilo.springboot</groupId>
+        <version>1.0.0</version>
+        <relativePath>../ch050_springboot_parent/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>ch053_springboot_dubbo_ssm_consumer</artifactId>
+
+<!--
+    消费者需要的依赖:
+        zookeeper\ dubbo \ thymeleaf \ 接口工程
+-->
+    <dependencies>
+
+<!--        注册中心-->
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+        </dependency>
+<!--        dubbo集成springboot框架起步依赖-->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+<!--        接口工程-->
+        <dependency>
+            <groupId>com.dilo.springboot</groupId>
+            <artifactId>ch051_springboot_dubbo_ssm_interface</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+
+
+<!--        springboot框架集成thymeleaf前端模板引擎起步依赖thymeleaf依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        <!--        springboot框架web项目起步依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

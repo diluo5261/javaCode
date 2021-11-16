@@ -33,7 +33,21 @@
         <option value="$PROJECT_DIR$/ch27_springboot_java_2/pom.xml" />
         <option value="$PROJECT_DIR$/ch28_spirngboot_close_logo/pom.xml" />
         <option value="$PROJECT_DIR$/ch30_springboot_interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/ch39_springboot_logback/pom.xml" />
+        <option value="$PROJECT_DIR$/ch37_springboot_thymeleaf_first/pom.xml" />
+        <option value="$PROJECT_DIR$/ch40_springboot_thymeleaf_first/pom.xml" />
+        <option value="$PROJECT_DIR$/ch41_springboot_thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/ch42_springboot_thymeleaf-expression/pom.xml" />
+        <option value="$PROJECT_DIR$/ch050_springboot_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/ch052_springboot_dubbo_ssm_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/ch053_springboot_dubbo_ssm_consumer/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ch050_springboot_parent/ch051_springboot_dubbo_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/ch051_springboot_ssm_dubbo_interface/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

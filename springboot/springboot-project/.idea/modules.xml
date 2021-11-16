@@ -6,6 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/ch002_springboot_mvc/ch002_springboot_mvc.iml" filepath="$PROJECT_DIR$/ch002_springboot_mvc/ch002_springboot_mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch03_springboot_path/ch03_springboot_path.iml" filepath="$PROJECT_DIR$/ch03_springboot_path/ch03_springboot_path.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch04_springboot_properties_yml_yaml/ch04_springboot_properties_yml_yaml.iml" filepath="$PROJECT_DIR$/ch04_springboot_properties_yml_yaml/ch04_springboot_properties_yml_yaml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch050_springboot_parent/ch050_springboot_parent.iml" filepath="$PROJECT_DIR$/ch050_springboot_parent/ch050_springboot_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch051_springboot_dubbo_ssm_interface/ch051_springboot_dubbo_ssm_interface.iml" filepath="$PROJECT_DIR$/ch051_springboot_dubbo_ssm_interface/ch051_springboot_dubbo_ssm_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch052_springboot_dubbo_ssm_provider/ch052_springboot_dubbo_ssm_provider.iml" filepath="$PROJECT_DIR$/ch052_springboot_dubbo_ssm_provider/ch052_springboot_dubbo_ssm_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch053_springboot_dubbo_ssm_consumer/ch053_springboot_dubbo_ssm_consumer.iml" filepath="$PROJECT_DIR$/ch053_springboot_dubbo_ssm_consumer/ch053_springboot_dubbo_ssm_consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch05_springboot_allboth_properties/ch05_springboot_allboth_properties.iml" filepath="$PROJECT_DIR$/ch05_springboot_allboth_properties/ch05_springboot_allboth_properties.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch06_springboot_multi_enviroment_properties/ch06_springboot_multi_enviroment_properties.iml" filepath="$PROJECT_DIR$/ch06_springboot_multi_enviroment_properties/ch06_springboot_multi_enviroment_properties.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch07_springboot_multi_enviroment_yml/ch07_springboot_multi_enviroment_yml.iml" filepath="$PROJECT_DIR$/ch07_springboot_multi_enviroment_yml/ch07_springboot_multi_enviroment_yml.iml" />
@@ -29,6 +33,10 @@
       <module fileurl="file://$PROJECT_DIR$/ch27_springboot_java_2/ch27_springboot_java_2.iml" filepath="$PROJECT_DIR$/ch27_springboot_java_2/ch27_springboot_java_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch28_spirngboot_close_logo/ch28_spirngboot_close_logo.iml" filepath="$PROJECT_DIR$/ch28_spirngboot_close_logo/ch28_spirngboot_close_logo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch30_springboot_interceptor/ch30_springboot_interceptor.iml" filepath="$PROJECT_DIR$/ch30_springboot_interceptor/ch30_springboot_interceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch39_springboot_logback/ch39_springboot_logback.iml" filepath="$PROJECT_DIR$/ch39_springboot_logback/ch39_springboot_logback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch40_springboot_thymeleaf_first/ch40_springboot_thymeleaf_first.iml" filepath="$PROJECT_DIR$/ch40_springboot_thymeleaf_first/ch40_springboot_thymeleaf_first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch41_springboot_thymeleaf/ch41_springboot_thymeleaf.iml" filepath="$PROJECT_DIR$/ch41_springboot_thymeleaf/ch41_springboot_thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch42_springboot_thymeleaf-expression/ch42_springboot_thymeleaf-expression.iml" filepath="$PROJECT_DIR$/ch42_springboot_thymeleaf-expression/ch42_springboot_thymeleaf-expression.iml" />
     </modules>
   </component>
 </project>
