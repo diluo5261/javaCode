@@ -1,0 +1,43 @@
+
+.blog_edit_container {
+    width: 1000px;
+    height: calc(100% - 50px);
+
+    /*background-color: aquamarine;*/
+    margin: 0 auto;
+}
+
+.blog_edit_container .title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    height: 40px;
+    width: 895px;
+
+    font-size: 22px;
+    text-indent: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+}
+
+#submit {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: orange;
+    border-radius: 10px;
+    border: none;
+}
+
+#editor {
+    border-radius: 10px;
+    /*background-color: rgba();*/
+    opacity: 60%;
+}
