@@ -1,0 +1,57 @@
+
+/*
+https://www.nowcoder.com/practice/ee5de2e7c45a46a090c1ced2fdc62355?tpId=85&&tqId=29867&rp=
+
+描述：
+
+将一句话的单词进行倒置，标点不倒置。比如 I like beijing. 经过函数后变为：beijing. like I
+
+
+ 题解：
+
+1. 先将整个字符串进行整体逆置
+2. 再对每个单词进行逆置
+
+*/
+
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        String str = scan.nextLine();
+        
+        char[] array = str.toCharArray();
+        int len = array.length;
+        resever(array,0,len-1);
+        
+        int i =0;
+        while(i <len ){
+            
+            int j = i;
+            while(j < len && array[j] != ' '){
+                j++;
+            }
+            
+            resever(array,i,j-1);
+            i = j+1;
+            
+        }
+        
+        System.out.println(new String(array));
+        
+    }
+    
+    public static void resever(char[] array,int start,int end){
+        int len = array.length;
+        if(start > end || end >= len) return;
+        
+        while(start < end){
+            char tmp = array[end];
+            array[end] = array[start];
+            array[start] = tmp;
+            start++;
+            end--;
+        }
+    }
+}
