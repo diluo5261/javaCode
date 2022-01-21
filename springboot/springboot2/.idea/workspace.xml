@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,17 +38,127 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot_01_02_quickstart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot_07_druid/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.40052357" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
-  <component name="RunManager" selected="Spring Boot.Springboot0102QuickstartApplication">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Document\code\java_practice\springboot2\springboot_07_druid\src\main\resources" />
+      <recent name="D:\Document\code\java_practice\springboot2\springboot_06_mybatisplus\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Document\code\java_practice\springboot2\springboot_02_base_config\src\main\resources\tmp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dilo.dao" />
+      <recent name="com.dilo" />
+      <recent name="com" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dilo.service" />
+      <recent name="com.dilo.controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Springboot08SsmpApplication">
+    <configuration name="BookDaoTest.testGetBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_08_ssmp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dilo.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.dao.BookDaoTest" />
+      <option name="METHOD_NAME" value="testGetBy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookDaoTest.testGetById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_08_ssmp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dilo.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.dao.BookDaoTest" />
+      <option name="METHOD_NAME" value="testGetById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookDaoTest.testGetPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_08_ssmp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dilo.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.dao.BookDaoTest" />
+      <option name="METHOD_NAME" value="testGetPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTestCase.testGetById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_08_ssmp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dilo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.service.BookServiceTestCase" />
+      <option name="METHOD_NAME" value="testGetById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest.testGetById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_08_ssmp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dilo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.service.BookServiceTest" />
+      <option name="METHOD_NAME" value="testGetById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Springboot0101QuickstartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot_01_01_quickstart" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.Springboot0101QuickstartApplication" />
@@ -62,6 +173,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Springboot0103QuickstartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_01_03_quickstart" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.Springboot0103QuickstartApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot04JunitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_04_junit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.Springboot04JunitApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot05MybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_05_mybatis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.Springboot05MybatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot06MybatisplusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_06_mybatisplus" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.Springboot06MybatisplusApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot07DruidApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_07_druid" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.Springboot07DruidApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot08SsmpApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_08_ssmp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.SSMPApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="springboot_02_base_config" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_02_base_config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.Springboot0101QuickstartApplication" />
+      <item itemvalue="Spring Boot.Springboot0102QuickstartApplication" />
+      <item itemvalue="Spring Boot.Springboot0103QuickstartApplication" />
+      <item itemvalue="Spring Boot.springboot_02_base_config" />
+      <item itemvalue="Spring Boot.Springboot04JunitApplication" />
+      <item itemvalue="Spring Boot.Springboot05MybatisApplication" />
+      <item itemvalue="Spring Boot.Springboot06MybatisplusApplication" />
+      <item itemvalue="Spring Boot.Springboot07DruidApplication" />
+      <item itemvalue="Spring Boot.Springboot08SsmpApplication" />
+      <item itemvalue="JUnit.BookDaoTest.testGetById" />
+      <item itemvalue="JUnit.BookDaoTest.testGetPage" />
+      <item itemvalue="JUnit.BookDaoTest.testGetBy" />
+      <item itemvalue="JUnit.BookServiceTestCase.testGetById" />
+      <item itemvalue="JUnit.BookServiceTest.testGetById" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookServiceTest.testGetById" />
+        <item itemvalue="JUnit.BookServiceTestCase.testGetById" />
+        <item itemvalue="JUnit.BookDaoTest.testGetBy" />
+        <item itemvalue="JUnit.BookDaoTest.testGetPage" />
+        <item itemvalue="JUnit.BookDaoTest.testGetById" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,7 +261,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642694340446</updated>
       <workItem from="1642694341825" duration="89000" />
-      <workItem from="1642727065423" duration="598000" />
+      <workItem from="1642727065423" duration="19699000" />
     </task>
     <servers />
   </component>
