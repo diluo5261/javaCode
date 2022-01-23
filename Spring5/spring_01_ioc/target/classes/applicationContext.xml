@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="userDao" class="com.dilo.dao.impl.UserDaoImpl" init-method="init" destroy-method="destroy"/>-->
+<!--    <bean id="userDao" class="com.dilo.dao.factory.StaticFactory" factory-method="getUserDao"></bean>-->
+    <bean id="factory" class="com.dilo.factory.DynamicFactory"/>
+    <bean id="userDao" class="com.dilo.dao.impl.UserDaoImpl" factory-bean="factory"/>
+
+
+    <bean id="user" class="com.dilo.domain.User">
+        <property name="name" value="zhansan"/>
+        <property name="age" value="20"/>
+        <property name="school" ref="school"/>
+    </bean>
+
+
+    <bean id="school" class="com.dilo.domain.School">
+        <property name="address" value="天津"/>
+        <property name="phone" value="1562351"/>
+    </bean>
+
+
+</beans>
