@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <context:component-scan base-package="com.dilo.controller"/>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--        前缀:表示视图所在的路径-->
+        <property name="prefix" value="/WEB-INF/"/>
+<!--        后缀:表示视图的扩展名-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+<!--   ConversionServiceFactoryBean是存放转换器的工厂,我们要把转换器配置给工厂 -->
+    <!--<bean id="conversionServiceFactory" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="com.dilo.controller.MyController"/>
+            </set>
+        </property>
+    </bean>
+-->
+    <mvc:annotation-driven />
+<!--    <mvc:annotation-driven conversion-service="conversionServiceFactory"/>-->
+
+<!--    配置文件上传解析器-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--上传文件的编码方式-->
+        <property name="defaultEncoding" value="utf-8"/>
+        <!--       上传文件总大小-->
+        <property name="maxUploadSize" value="102400"/>
+        <!--        上传单个文件的大小-->
+        <property name="maxUploadSizePerFile" value="102400"/>
+
+    </bean>
+
+
+</beans>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <bean id="userDao" class="com.dilo.dao.impl.UserDaoImpl" init-method="init" destroy-method="destroy"/>-->
+<!--    <bean id="userDao" class="com.dilo.dao.factory.StaticFactory" factory-method="getUserDao"></bean>-->
+    <bean id="factory" class="com.dilo.factory.DynamicFactory"/>
+    <bean id="userDao" class="com.dilo.dao.impl.UserDaoImpl" factory-bean="factory"/>
+
+
+
+    <bean id="user" class="com.dilo.domain.User">
+        <property name="name" value="zhansan"/>
+        <property name="age" value="20"/>
+        <property name="school" ref="school"/>
+        <property name="hobby">
+            <list>
+                <value>football</value>
+                <value>basketball</value>
+            </list>
+        </property>
+
+        <property name="schoolMap">
+            <map>
+                <entry key="k1" value-ref="s1"/>
+                <entry key="k2" value-ref="s2"/>
+            </map>
+        </property>
+
+        <property name="schoolList">
+            <list>
+                <ref bean="school"/>
+                <ref bean="s1"/>
+                <ref bean="s2"/>
+            </list>
+        </property>
+
+        <property name="properties">
+            <props>
+                <prop key="p1">111</prop>
+                <prop key="p2">222</prop>
+                <prop key="p3">333</prop>
+            </props>
+
+        </property>
+    </bean>
+
+
+    <bean id="school" class="com.dilo.domain.School">
+        <property name="address" value="天津"/>
+        <property name="phone" value="1562351"/>
+    </bean>
+
+    <bean id="s1" class="com.dilo.domain.School">
+        <property name="address" value="天津1"/>
+        <property name="phone" value="11111"/>
+    </bean>
+
+    <bean id="s2" class="com.dilo.domain.School">
+        <property name="address" value="天津2"/>
+        <property name="phone" value="2222"/>
+    </bean>
+
+    <bean id="school1" class="com.dilo.domain.School">
+        <constructor-arg name="address" value="北京大学"/>
+        <constructor-arg name="phone" value="6666"/>
+    </bean>
+
+
+
+</beans>
