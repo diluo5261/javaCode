@@ -19,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="spring-beans.schema" />
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -88,7 +88,11 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dilo" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dilo.aop" />
       <recent name="com.dilo.dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -98,9 +102,9 @@
       <recent name="com.dilo.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.52">
-    <configuration name="AppTest.queryOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_04_jdbc" />
+  <component name="RunManager" selected="JUnit.MyTest.test01">
+    <configuration name="AppTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_06_aop_anno" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dilo.*" />
@@ -109,70 +113,71 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dilo" />
       <option name="MAIN_CLASS_NAME" value="com.dilo.AppTest" />
-      <option name="METHOD_NAME" value="queryOne" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.roleDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_05_test" />
+    <configuration name="AppTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_06_aop_anno" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.dao.*" />
+          <option name="PATTERN" value="com.dilo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.dao.MyTest" />
-      <option name="METHOD_NAME" value="roleDaoTest" />
+      <option name="PACKAGE_NAME" value="com.dilo" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.AppTest" />
+      <option name="METHOD_NAME" value="test02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_05_test" />
+    <configuration name="MyTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_07_transation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.dao.*" />
+          <option name="PATTERN" value="com.dilo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.dao.RoleDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoleDaoTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_05_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dilo.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.dao.RoleDaoTest" />
-      <option name="METHOD_NAME" value="findAll" />
+      <option name="PACKAGE_NAME" value="com.dilo" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.MyTest" />
+      <option name="METHOD_NAME" value="addTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleDaoTest.serviceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_05_test" />
+    <configuration name="MyTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_07_transation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.dao.*" />
+          <option name="PATTERN" value="com.dilo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.dao.RoleDaoTest" />
-      <option name="METHOD_NAME" value="serviceTest" />
+      <option name="PACKAGE_NAME" value="com.dilo" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.MyTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.updateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_07_transation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dilo" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.MyTest" />
+      <option name="METHOD_NAME" value="updateTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -269,20 +274,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AppTest.queryOne" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
-      <item itemvalue="JUnit.RoleDaoTest.findAll" />
-      <item itemvalue="JUnit.RoleDaoTest" />
-      <item itemvalue="JUnit.MyTest.roleDaoTest" />
-      <item itemvalue="JUnit.RoleDaoTest.serviceTest" />
+      <item itemvalue="JUnit.AppTest.test01" />
+      <item itemvalue="JUnit.AppTest.test02" />
+      <item itemvalue="JUnit.MyTest.test01" />
+      <item itemvalue="JUnit.MyTest.addTest" />
+      <item itemvalue="JUnit.MyTest.updateTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RoleDaoTest.findAll" />
-        <item itemvalue="JUnit.RoleDaoTest.serviceTest" />
-        <item itemvalue="JUnit.MyTest.roleDaoTest" />
-        <item itemvalue="JUnit.RoleDaoTest" />
-        <item itemvalue="JUnit.AppTest.queryOne" />
+        <item itemvalue="JUnit.MyTest.test01" />
+        <item itemvalue="JUnit.MyTest.updateTest" />
+        <item itemvalue="JUnit.MyTest.addTest" />
+        <item itemvalue="JUnit.AppTest.test01" />
+        <item itemvalue="JUnit.AppTest.test02" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +306,9 @@
       <workItem from="1643031437562" duration="243000" />
       <workItem from="1643031725099" duration="4360000" />
       <workItem from="1643074162135" duration="1482000" />
-      <workItem from="1643075675255" duration="16677000" />
+      <workItem from="1643075675255" duration="19174000" />
+      <workItem from="1643107676856" duration="1877000" />
+      <workItem from="1643109596607" duration="10748000" />
     </task>
     <servers />
   </component>

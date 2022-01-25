@@ -7,6 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/spring_03_springweb/spring_03_springweb.iml" filepath="$PROJECT_DIR$/spring_03_springweb/spring_03_springweb.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_04_jdbc/spring_04_jdbc.iml" filepath="$PROJECT_DIR$/spring_04_jdbc/spring_04_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_05_test/spring_05_test.iml" filepath="$PROJECT_DIR$/spring_05_test/spring_05_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_06_aop_anno/spring_06_aop_anno.iml" filepath="$PROJECT_DIR$/spring_06_aop_anno/spring_06_aop_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_06_aop_xml/spring_06_aop_xml.iml" filepath="$PROJECT_DIR$/spring_06_aop_xml/spring_06_aop_xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_07_transation/spring_07_transation.iml" filepath="$PROJECT_DIR$/spring_07_transation/spring_07_transation.iml" />
     </modules>
   </component>
 </project>
