@@ -19,7 +19,7 @@
       <module name="spring_03_springweb" target="1.8" />
       <module name="spring_04_jdbc" target="1.8" />
       <module name="spring_04_jdbcTemplate" target="1.8" />
-      <module name="spring_05_test" target="1.7" />
+      <module name="spring_05_test" target="1.8" />
       <module name="spring_xx_xx" target="1.8" />
     </bytecodeTargetLevel>
   </component>
