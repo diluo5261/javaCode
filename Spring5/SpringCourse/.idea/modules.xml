@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring_06_aop_anno/spring_06_aop_anno.iml" filepath="$PROJECT_DIR$/spring_06_aop_anno/spring_06_aop_anno.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_06_aop_xml/spring_06_aop_xml.iml" filepath="$PROJECT_DIR$/spring_06_aop_xml/spring_06_aop_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_07_transation/spring_07_transation.iml" filepath="$PROJECT_DIR$/spring_07_transation/spring_07_transation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_08_mybatis/spring_08_mybatis.iml" filepath="$PROJECT_DIR$/spring_08_mybatis/spring_08_mybatis.iml" />
     </modules>
   </component>
 </project>

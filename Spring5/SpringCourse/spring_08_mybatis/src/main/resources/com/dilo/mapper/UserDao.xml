@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dilo.dao.UserDao">
+
+    <select id="selectOne" resultType="com.dilo.domain.User">
+        select id,name,age from user where id =#{id}
+    </select>
+
+    <select id="selectStudents" resultType="com.dilo.domain.User">
+        select * from user
+    </select>
+
+    <insert id="insert" parameterType="com.dilo.domain.User">
+        insert into user(name ,age) values (#{name},#{age})
+    </insert>
+
+    <update id="update" parameterType="com.dilo.domain.User">
+        update  user set age = #{age} where name =#{name}
+    </update>
+
+    <delete id="delete">
+        delete from user where id=#{id}
+    </delete>
+
+    <select id="selectMultiParam" resultType="com.dilo.domain.User">
+        select * from user where name = #{personName} or age = #{personAge}
+    </select>
+
+    <select id="selectMultiObject" resultType="com.dilo.domain.User">
+        select * from user where name = #{name} or age = #{age}
+    </select>
+
+    <select id="selectMultiPos" resultType="com.dilo.domain.User">
+        select * from user where name=#{arg0} or age = #{arg1}
+    </select>
+
+    <select id="selectMultiMap" resultType="com.dilo.domain.User">
+        select * from user where name = #{name} or age = #{age}
+    </select>
+
+<!--    如果参数是String类型的,需要parameterType声明参数类型-->
+    <select id="selectUserByNick" parameterType="String" resultType="com.dilo.domain.User">
+        select * from user where name like '${keyWord}'
+    </select>
+
+    <select id="findByDiffFiled" resultType="com.dilo.domain.User">
+        select * from user where ${col} = #{cval}
+    </select>
+
+    <select id="selectLikeFirst" resultType="com.dilo.domain.User">
+        select * from user where name like "%"#{UserName}"%"
+    </select>
+
+</mapper>
+
+  
+ 
