@@ -35,7 +35,7 @@ public class BookDaoTest {
     @Test
     void testGetPage(){
 
-      IPage<Book> page = new Page(2,3);
+      IPage<Book> page = new Page(1,10);
       bookDao.selectPage(page, null);
 
     }

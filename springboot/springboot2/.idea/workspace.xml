@@ -21,7 +21,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Software/JavaTools/maven/apache-maven-3.8.2" />
         <option name="userSettingsFile" value="D:\Software\JavaTools\maven\apache-maven-3.8.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -46,15 +46,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot_07_druid/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot_08_ssmp/src/main/resources/static" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40052357" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Document\code\java_practice\springboot2\springboot_08_ssmp\src\main\resources\static" />
       <recent name="D:\Document\code\java_practice\springboot2\springboot_07_druid\src\main\resources" />
       <recent name="D:\Document\code\java_practice\springboot2\springboot_06_mybatisplus\src\main\resources" />
     </key>
@@ -67,8 +68,8 @@
       <recent name="com" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.dilo.service" />
       <recent name="com.dilo.controller" />
+      <recent name="com.dilo.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -79,22 +80,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Springboot08SsmpApplication">
-    <configuration name="BookDaoTest.testGetBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_08_ssmp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dilo.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.dao.BookDaoTest" />
-      <option name="METHOD_NAME" value="testGetBy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BookDaoTest.testGetById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot_08_ssmp" />
       <extension name="coverage">
@@ -127,33 +112,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookServiceTestCase.testGetById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SSPApplicationTests.testByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot_08_ssmp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.service.*" />
+          <option name="PATTERN" value="com.dilo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.service.BookServiceTestCase" />
-      <option name="METHOD_NAME" value="testGetById" />
+      <option name="PACKAGE_NAME" value="com.dilo" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.SSPApplicationTests" />
+      <option name="METHOD_NAME" value="testByCondition" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookServiceTest.testGetById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SSPApplicationTests.testByCondition2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot_08_ssmp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.service.*" />
+          <option name="PATTERN" value="com.dilo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.service.BookServiceTest" />
-      <option name="METHOD_NAME" value="testGetById" />
+      <option name="PACKAGE_NAME" value="com.dilo" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.SSPApplicationTests" />
+      <option name="METHOD_NAME" value="testByCondition2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SSPApplicationTests.testPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_08_ssmp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dilo" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.SSPApplicationTests" />
+      <option name="METHOD_NAME" value="testPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -227,6 +228,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.SSPApplicationTests.testPage" />
+      <item itemvalue="JUnit.SSPApplicationTests.testByCondition" />
+      <item itemvalue="JUnit.SSPApplicationTests.testByCondition2" />
+      <item itemvalue="JUnit.BookDaoTest.testGetById" />
       <item itemvalue="Spring Boot.Springboot0101QuickstartApplication" />
       <item itemvalue="Spring Boot.Springboot0102QuickstartApplication" />
       <item itemvalue="Spring Boot.Springboot0103QuickstartApplication" />
@@ -236,19 +241,15 @@
       <item itemvalue="Spring Boot.Springboot06MybatisplusApplication" />
       <item itemvalue="Spring Boot.Springboot07DruidApplication" />
       <item itemvalue="Spring Boot.Springboot08SsmpApplication" />
-      <item itemvalue="JUnit.BookDaoTest.testGetById" />
       <item itemvalue="JUnit.BookDaoTest.testGetPage" />
-      <item itemvalue="JUnit.BookDaoTest.testGetBy" />
-      <item itemvalue="JUnit.BookServiceTestCase.testGetById" />
-      <item itemvalue="JUnit.BookServiceTest.testGetById" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookServiceTest.testGetById" />
-        <item itemvalue="JUnit.BookServiceTestCase.testGetById" />
-        <item itemvalue="JUnit.BookDaoTest.testGetBy" />
         <item itemvalue="JUnit.BookDaoTest.testGetPage" />
         <item itemvalue="JUnit.BookDaoTest.testGetById" />
+        <item itemvalue="JUnit.SSPApplicationTests.testPage" />
+        <item itemvalue="JUnit.SSPApplicationTests.testByCondition2" />
+        <item itemvalue="JUnit.SSPApplicationTests.testByCondition" />
       </list>
     </recent_temporary>
   </component>
@@ -261,11 +262,24 @@
       <option name="presentableId" value="Default" />
       <updated>1642694340446</updated>
       <workItem from="1642694341825" duration="89000" />
-      <workItem from="1642727065423" duration="19699000" />
+      <workItem from="1642727065423" duration="22198000" />
+      <workItem from="1643338650309" duration="17528000" />
+      <workItem from="1643364084088" duration="157000" />
+      <workItem from="1643364303238" duration="15455000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

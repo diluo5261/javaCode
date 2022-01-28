@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-//解决测试包移动位置后不能用的问题
+//解决测试包移动位置后不能用的问题,在引导类的包或子包下没有问题
 @SpringBootTest(classes = Springboot04JunitApplication.class)
 class Springboot04JunitApplicationTests {
     //1.注入要测试的对象
