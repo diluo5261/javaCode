@@ -1,0 +1,10 @@
+com\dilo\pojo\Permission.class
+com\dilo\pojo\TravelGroup.class
+com\dilo\pojo\Setmeal.class
+com\dilo\pojo\TravelItem.class
+com\dilo\pojo\Order.class
+com\dilo\pojo\Member.class
+com\dilo\pojo\Role.class
+com\dilo\pojo\Menu.class
+com\dilo\pojo\OrderSetting.class
+com\dilo\pojo\User.class

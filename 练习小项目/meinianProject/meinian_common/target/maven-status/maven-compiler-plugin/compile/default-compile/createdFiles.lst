@@ -1,0 +1,4 @@
+com\dilo\entity\PageResult.class
+com\dilo\entity\QueryPageBean.class
+com\dilo\entity\Result.class
+com\dilo\MessageConstant\MessageConstant.class
