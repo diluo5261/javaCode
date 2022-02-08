@@ -1,0 +1,4 @@
+com\dilo\springcloud\controller\PaymentController.class
+com\dilo\springcloud\service\impl\PaymentServiceImpl.class
+com\dilo\springcloud\dao\PaymentDao.class
+com\dilo\springcloud\service\PaymentService.class
