@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 列表渲染 -->
+        <ui>
+            <li v-for="num in nums"> {{num}}</li>
+        </ui>
+
+        <!-- 渲染表格 -->
+        <table>
+            <tr v-for="user in userList">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.age}}</td>
+            </tr>
+        </table>
+
+        <!-- 渲染表单 -->
+        <form action="">
+            <p v-for="(value,key,index) in user">
+                <label>{{index+1}}--{{key}}</label>
+                <input type="text" v-model="value">
+            </p>
+        </form>
+        
+    </div>
+
+    <script src="vue.min.js"></script>
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data:{
+                nums:[1,5,8,6,93,5],
+                userList:[
+                    {id:1,name:'zhangsan',age:18},
+                    {id:2,name:'lisi',age:20},
+                    {id:3,name:'wangwu',age:30}
+                ],
+                user:{
+                    id:4,name:"zhaoliu",age:55
+                }
+            }
+
+        })
+
+
+    </script>
+    
+</body>
+</html>

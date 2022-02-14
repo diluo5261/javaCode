@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <Navbar555></Navbar>
+        
+       
+    </div>
+
+    <script src="vue.min.js"></script>
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data:{
+                message:'hello vue'
+            },
+            components:{
+                'Navbar555':{
+                    template: '<ui><li>菜单一</li><li>菜单二</li><li>菜单三</li></ui>'
+                }
+            }
+
+        })
+
+
+    </script>
+    
+</body>
+</html>
