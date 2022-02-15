@@ -12,7 +12,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @author dilo
  * @since 2022-02-11
  */
-@Mapper
+//@Mapper
 public interface EduTeacherMapper extends BaseMapper<EduTeacher> {
 
 }

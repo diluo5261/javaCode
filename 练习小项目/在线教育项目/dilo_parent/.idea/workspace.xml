@@ -18,6 +18,14 @@
       </list>
     </option>
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -46,18 +54,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_edu/src/test/java/com/dilo/eduservice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../github/javaCode/练习小项目/在线教育项目/dilo_parent" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.123304546" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Document\code\dilo_parent\service\service_edu\src\test\java\com\dilo\eduservice" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.OssApplication">
+  <component name="RunManager" selected="Spring Boot.EduApplication">
     <configuration name="CodeGenerator.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service_edu" />
       <extension name="coverage">
@@ -69,6 +80,38 @@
       <option name="PACKAGE_NAME" value="com.dilo.eduservice" />
       <option name="MAIN_CLASS_NAME" value="com.dilo.eduservice.CodeGenerator" />
       <option name="METHOD_NAME" value="run" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExcelTest.readTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_edu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.eduservice.excel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dilo.eduservice.excel" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.eduservice.excel.ExcelTest" />
+      <option name="METHOD_NAME" value="readTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExcelTest.writeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_edu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.eduservice.excel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dilo.eduservice.excel" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.eduservice.excel.ExcelTest" />
+      <option name="METHOD_NAME" value="writeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,8 +139,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.OssApplication" />
         <item itemvalue="JUnit.CodeGenerator.run" />
+        <item itemvalue="JUnit.ExcelTest.readTest" />
+        <item itemvalue="JUnit.ExcelTest.writeTest" />
+        <item itemvalue="Spring Boot.OssApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -114,6 +159,8 @@
       <workItem from="1644580067674" duration="103000" />
       <workItem from="1644580563435" duration="17755000" />
       <workItem from="1644716543825" duration="18012000" />
+      <workItem from="1644885681082" duration="7235000" />
+      <workItem from="1644895797608" duration="13904000" />
     </task>
     <servers />
   </component>
