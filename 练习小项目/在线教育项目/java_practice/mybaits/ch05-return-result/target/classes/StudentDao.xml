@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dilo.dao.StudentDao">
+
+
+    <select id="selectStudentById" parameterType="java.lang.Integer" resultType="com.dilo.domain.Student">
+        select id,name,email,age from student where id =#{id};
+    </select>
+
+    <select id="selectMultiParam" resultType="com.dilo.domain.Student">
+        select * from student where name = #{myname} or age = #{myage}
+    </select>
+
+<!--    sql执行后返回一行一类-->
+    <select id="countStudent" resultType="java.lang.Integer">
+        select count(*) from student
+    </select>
+
+<!--
+    返回map
+    1. 类名是 map 的 key , 列值是 map 的value
+    2. 只能返回一行记录,多于一行是错误的
+-->
+    <select id="selectMapById" resultType="java.util.HashMap">
+        select id , name from student where id = #{stuid}
+
+    </select>
+
+<!--
+        使用resultMap
+        1)先定义resultMap
+        2)在delectMap标签,使用 resultMap来引用1定义的
+-->
+
+<!--
+        定义resultMap
+        id : 自定义名称,表示你定义的这个 resultMap
+        type :java 类型的全限定名称
+-->
+
+    <resultMap id="studentMap" type="com.dilo.domain.Student">
+<!--
+        列名和 java 属性的关系
+
+        主键列,使用id标签
+        column : 列名
+        property : java类型的属性名
+
+-->
+        <id column="id" property="id"/>
+
+<!--        非主键列,使用result-->
+
+        <result column="name" property="name"/>
+
+    </resultMap>
+
+    <select id="selectAllStudents" resultMap="studentMap">
+
+        select * from student
+    </select>
+
+<!--    列名和属性名不一样,第二种方式
+        resultType 的默认原则是 同名的列赋值给同名的属性, 使用列别名
+-->
+
+    <select id="selectAllStudents" resultType="com.dilo.domain.Student">
+
+        select id as stuid , name as stuname , email as stuemail ,age as stuage from student
+    </select>
+
+<!--    第一种模糊查询
+        在java代码中指定like的内容
+-->
+    <select id="selectLikeOne" resultType="com.dilo.domain.Student">
+        select * from student where name like #{name}
+    </select>
+
+<!--
+        第二种方式
+-->
+
+</mapper>
+
+  
+ 

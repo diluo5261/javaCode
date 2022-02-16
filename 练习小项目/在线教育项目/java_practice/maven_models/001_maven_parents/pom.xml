@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.dilo</groupId>
+  <artifactId>001_maven_parents</artifactId>
+  <version>1.0.0</version>
+  <modules>
+    <module>002_maven_child1</module>
+    <module>../003_maven_child2</module>
+  </modules>
+  <packaging>pom</packaging>
+
+<!--  pom是项目对象模型(Project Object Model) 该文件是可以被子工程继承
+      maven 多模块管理其实就是让它的子模块的 pom文件来继承父工程的 pom 文件
+-->
+<!--
+    maven 父工程必须遵循以下两点要求:
+    1. packaging 标签的文本必须设置为 pom
+    2. 把src目录删掉
+    3. 设置
+-->
+
+<!--  父管理依赖版本号-->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+
+<!--    自定义标签名称-->
+<!--    通常管理依赖版本号的标签名由  =  项目名称 + 字段version-->
+
+    <mysql-connector-java-version>8.0.26</mysql-connector-java-version>
+    <jedis.version>3.3.0</jedis.version>
+  </properties>
+
+
+  <!--  父工程要加强管理子模块所有依赖,不再是无条件继承了-->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql-connector-java-version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>redis.clients</groupId>
+        <artifactId>jedis</artifactId>
+        <version>${jedis.version}</version>
+      </dependency>
+    </dependencies>
+
+
+  </dependencyManagement>
+
+<!--  父公共添加的依赖,所有子工程会无条件的继承-->
+
+
+
+  <build>
+
+  </build>
+</project>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ch04_return" />
+        <module name="ch12-interceptor-permission" />
+        <module name="ch08-SSM" />
+        <module name="ch08-forward" />
+        <module name="ch01-hello-spring" />
+        <module name="ch10-interceptor" />
+        <module name="ch02-mapping" />
+        <module name="ch06-path" />
+        <module name="ch09-exceptiom-handle" />
+        <module name="ch05-url-pattern" />
+        <module name="ch07-ssm" />
+        <module name="ch03_receiveparam" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ch01-hello-spring" target="1.8" />
+      <module name="ch01-hello-spring (1)" target="1.8" />
+      <module name="ch01-hello-springmvc" target="1.8" />
+      <module name="ch02-mapping" target="1.8" />
+      <module name="ch02-requestmapping" target="1.7" />
+      <module name="ch03-recevieparam" target="1.8" />
+      <module name="ch03_receiveparam" target="1.8" />
+      <module name="ch04_return" target="1.8" />
+      <module name="ch05-url-pattern" target="1.8" />
+      <module name="ch06-path" target="1.8" />
+      <module name="ch07-ssm" target="1.8" />
+      <module name="ch08-forward" target="1.8" />
+      <module name="ch08-SSM" target="1.8" />
+      <module name="ch09-exceptiom-handle" target="1.8" />
+      <module name="ch10-interceptor" target="1.8" />
+      <module name="ch12-interceptor-permission" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

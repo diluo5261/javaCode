@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    
+
+    <typeAliases>
+<!--        name:实体类所在的包名(不是实体类的包名也可以)-->
+        <package name="com.dilo.domain"/>
+    </typeAliases>
+    <!-- sql mapper(sql映射文件)的位置-->
+    <mappers>
+<!--        <mapper resource="xxx/xxx/xxx/xxx.xml"/>-->
+<!--        使用package的要求,:1.mapper文件名称和dao接口名不写完全一致,包括大小写2.mapper文件和dao接口必须在同一目录-->
+
+        <package name="com.dilo.dao"/>
+    </mappers>
+</configuration>

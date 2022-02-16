@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+<!--    声明组件扫描器-->
+    <context:component-scan base-package="com.dilo.controller"/>
+
+<!--    声明springmvc框架中的视图解析器,帮助开发人员设置视图文件的路径-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--        前缀:视图文件的路径
+            前后都有 /  前面/ 表示根路径, 后面 / 表示是个路径
+ -->
+        <property name="prefix" value="/WEB-INF/view/"/>
+<!--        后缀:视图文件的扩展名-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+<!--    没有注解驱动-->
+<!--    default-servlet-handler  和 @RequestMapping注解有冲突,需要加入annotation-driver 解决问题
+        如果没有注册驱动,会把所有的请求都转发给 tomcat的default,就会报错
+-->
+    <mvc:annotation-driven/>
+
+<!--    第二种处理静态资源的方式:
+        mvc:resources :加入框架后会创建 ResourceHttpServletHandler这个处理器对象,让这个对象处理静态资源的访问
+        不依赖tomcat服务器
+        mapping : 访问静态资源的uri地址,使用通配符 ** , images/**  表示images后面的任何字符,文件或目录
+        location : 静态资源在你的目录中的位置
+
+        一般在工作中,可以创建一个static 目录,把所有的静态都放在静态文件夹中,使用一条配置语句
+
+
+-->
+
+    <mvc:resources mapping="/images/**" location="/images/"/>
+    <mvc:resources mapping="/html/**" location="/html/"/>
+</beans>

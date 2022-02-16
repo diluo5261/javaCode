@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/05_web/05_web.iml" filepath="$PROJECT_DIR$/05_web/05_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_servlet/06_servlet.iml" filepath="$PROJECT_DIR$/06_servlet/06_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_Servlet/07_Servlet.iml" filepath="$PROJECT_DIR$/07_Servlet/07_Servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_lebit.iml" filepath="$PROJECT_DIR$/JavaWeb_lebit.iml" />
+    </modules>
+  </component>
+</project>

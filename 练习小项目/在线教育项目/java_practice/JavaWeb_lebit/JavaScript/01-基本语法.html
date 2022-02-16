@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--
+    js放置的位置
+        1、放在head标签中
+        2、放在body
+        3、放在body标签后（推荐）
+
+    js代码从上往下执行，最好等到html元素执行完毕后再执行js代码
+    onclick 点击时间，当点击元素时触发，alter（“内容”）弹出层
+    console.log("");打印内容在控制台
+
+
+-->
+
+
+</head>
+<body>
+<!--    行内-->
+    <button type="button" onclick="alert('hello')">按钮</button>
+
+
+</body>
+<!--内部js-->
+    <script type = "text/javascript" >
+        alert("你好")
+    </script>
+<!--引入外部js文件  src ：引入文件的路径-->
+<!--如果script设置了src属性，则在script中写的js代码无效-->
+<script src="test.js"></script>
+</html>

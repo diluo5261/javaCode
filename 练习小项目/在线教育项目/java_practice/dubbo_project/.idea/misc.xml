@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/ch01-link-consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/ch01-link-userservice-provider" />
+    <file type="web" url="file://$PROJECT_DIR$/node - shop - userservice" />
+    <file type="web" url="file://$PROJECT_DIR$/node-shop-orderservice" />
+    <file type="web" url="file://$PROJECT_DIR$/node-shop-userservice" />
+    <file type="web" url="file://$PROJECT_DIR$/node-shop-web" />
+    <file type="web" url="file://$PROJECT_DIR$/zk-node-shop-orderservice" />
+    <file type="web" url="file://$PROJECT_DIR$/zk-node-shop-userservice" />
+    <file type="web" url="file://$PROJECT_DIR$/zk-node-shop-web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ch01-link-userservice-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/ch01-link-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/link-orderservice-provide/pom.xml" />
+        <option value="$PROJECT_DIR$/link-main-web/pom.xml" />
+        <option value="$PROJECT_DIR$/node-shop-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/node - shop - userservice/pom.xml" />
+        <option value="$PROJECT_DIR$/node-shop-userservice/pom.xml" />
+        <option value="$PROJECT_DIR$/node-shop-orderservice/pom.xml" />
+        <option value="$PROJECT_DIR$/node-shop-web/pom.xml" />
+        <option value="$PROJECT_DIR$/zk-node-shop-orderservice/pom.xml" />
+        <option value="$PROJECT_DIR$/zk-node-shop-userservice/pom.xml" />
+        <option value="$PROJECT_DIR$/zk-node-shop-web/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

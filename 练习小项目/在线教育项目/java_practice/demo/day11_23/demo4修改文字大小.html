@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="font-size: 20px">你好</div>
+
+<script>
+    document.querySelector("div").onclick=function () {
+        let curSize= parseInt(this.style.fontSize);
+        this.style.fontSize=curSize+10+"px";
+    }
+</script>
+</body>
+</html>

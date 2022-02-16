@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="重新开始一局" id="reset">
+<br>
+请输入要猜的数字:<input type="text" id="number"> <button id="guess">猜</button>
+<br/>
+已经猜的次数 : <span id="count">0</span>
+<br/>
+结果 : <span id="result"></span>
+
+
+<script>
+    //1.获取要处理的元素
+    let  reset = document.querySelector("#reset");
+    let numberInput = document.querySelector("#number");
+    let guessButton = document.querySelector("#guess");
+    let count = document.querySelector("#count");
+    let result = document.querySelector("#result");
+    
+    //2.生产1~100随机数
+    let randomNum = Math.floor(Math.random()*100)+1;
+
+    let  guessCount = 0;
+    //3.给 guessbutton设置点击事件
+    guessButton.onclick=function () {
+        //更新猜的次数
+        guessCount += 1;
+        count.innerHTML=guessCount;
+        //提取输入框的内容
+
+        let userNum = parseInt(numberInput.value);
+
+        if (userNum == randomNum){
+            result.innerHTML="猜对了!!!";
+            result.style.color="green";
+        }else if (userNum > randomNum){
+            result.innerHTML="高了!!!";
+            result.style.color = "red";
+        }else{
+            result.innerHTML="低了!!!";
+            result.style.color="blue";
+        }
+
+    
+        //给resetbutton设置点击事件
+        reset.onclick=function () {
+
+            //location和document类似,都是浏览器提供的全局变量,document控制 DOM结构
+            //location 控制 浏览器跳转的
+            location.reload();
+        }
+
+        
+    }
+</script>
+</body>
+</html>

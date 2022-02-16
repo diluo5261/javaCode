@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <img  id = "light" src = "image/off.gif" onclick=fun()>
+        <img id = "light2" src="image/off.gif">
+
+
+<script>
+
+    function fun(){
+
+        alert("点击了图片");
+    }
+
+    function fun2(){
+        alert("点击图片2");
+    }
+
+    //1、获取light2对象
+    var light2 = document.getElementById("light2");
+    light2.onclick = fun2();
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+/*放置一些公共的样式,比如导航栏*/
+
+/*清除浏览器默认样式*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*给整体页面设置一个高度,让页面和浏览器窗口一样高*/
+html, body {
+    height: 100%;
+    width: 100%;
+
+    /*设置一个北京图片*/
+    background-image: url("../image/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*给导航栏设置样式*/
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(51,51,51,0.4);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /*图片变圆*/
+
+    margin-left: 20px;     /*让图片举例左边侧有点空隙*/
+    margin-right: 10px;  /*让图片右侧的标题有点空隙*/
+}
+
+.nav .spacer {
+    width: 80%;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+
+    margin: 0 auto;
+}
+
+
+/*版心的样式,需要多个页面引用*/
+
+.container {
+    width: 1000px;
+    /*height: 100%;*/
+    height: calc(100% - 50px);      /*    在 CSS中有一个calc函数,功能是动态计算数值*/
+    margin: 0 auto;
+
+    /*设置弹性布局*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .left {
+    height: 100%;
+    width: 200px;
+    /*background-color: black;*/
+}
+
+.container .right {
+    height: 100%;
+    width: 795px;
+
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+
+.card {
+    background-color: rgba(231, 170, 170, 0.8);
+
+    /*设置内边距*/
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+.container .left img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.card h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+/*github链接*/
+.card a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #888;
+    padding: 10px;
+}
+
+.card .counter {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}

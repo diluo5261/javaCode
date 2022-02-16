@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        //1. 定义基本格式
+        var person ={"name":"zhangsan","age":18,"gender":true};
+
+      /* for(var key in person){
+           alert(key +":"+person[key]);
+       }*/
+
+
+        //2. 嵌套格式 {} --> []
+        var persons = {
+            "persons":[
+                {"name":"张三","age":26,"gender":true},
+                {"name":"李四","age":27,"gender":false},
+                {"name":"王五","age":28,"gender":true},
+            ]
+        };
+        var ps = persons.persons;
+        for(var i=0;i<ps.length;i++){
+
+            for(var key in ps[i]){
+                document.write(key+":"+ps[i][key]);
+            }
+            document.write("<br>");
+
+        }
+
+
+
+        //3.嵌套格式 [] --> {}
+        var persons2 =[
+            {"name":"张三","age":26,"gender":true},
+            {"name":"李四","age":27,"gender":false},
+            {"name":"王五","age":28,"gender":true},
+        ];
+
+       /* for(var i =0;i<persons2.length;i++){
+            var p = persons2[i];
+            for(var key in p){
+                document.write(key+":"+p[key]+"   ");
+            }
+            document.write(" <br>");
+        }*/
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

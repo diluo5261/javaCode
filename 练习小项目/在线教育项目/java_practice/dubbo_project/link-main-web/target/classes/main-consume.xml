@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+<!--    声明服务的名称-->
+    <dubbo:application name="link-main-web"/>
+
+
+<!--    声明要使用的远程接口（服务提供者）
+        id:dubbo创建的接口的实现类对象的名称，（动态代理）
+        interface:远程的接口全限定名称（服务提供者中的接口）
+        registry ： 表示是否使用注册中心 ， 不使用赋值 N/A
+        url ： 访问服务提供者的地址，直连方式中，地址是固定的
+-->
+    <dubbo:reference id="remoteOrderService" interface="com.dilo.service.OrderService" registry="N/A"
+    url="dubbo://localhost:20880"/>
+
+<!--    声明自定义的业务对象-->
+    <bean id="shopService" class="com.dilo.service.impl.ShopServiceImpl">
+        <property name="orderService"  ref="remoteOrderService"/>
+    </bean>
+</beans>

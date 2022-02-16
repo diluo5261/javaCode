@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ch001_springboot_first/pom.xml" />
+        <option value="$PROJECT_DIR$/ch002_springboot_mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/ch03_springboot_path/pom.xml" />
+        <option value="$PROJECT_DIR$/ch04_springboot_properties_yml_yaml/pom.xml" />
+        <option value="$PROJECT_DIR$/ch05_springboot_allboth_properties/pom.xml" />
+        <option value="$PROJECT_DIR$/ch05_springboot_allboth_properties/ch06_springboot_multi_enviroment_properties/pom.xml" />
+        <option value="$PROJECT_DIR$/ch05_springboot_allboth_properties/ch06_springboot_multi_enviroment_properties/ch07_springboot_multi_enviroment_yml/pom.xml" />
+        <option value="$PROJECT_DIR$/ch06_springboot_multi_enviroment_properties/pom.xml" />
+        <option value="$PROJECT_DIR$/ch07_springboot_multi_enviroment_yml/pom.xml" />
+        <option value="$PROJECT_DIR$/ch08_springboot_customer_configer/pom.xml" />
+        <option value="$PROJECT_DIR$/ch09_springboot_customer_configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/ch10_spring_jsp/pom.xml" />
+        <option value="$PROJECT_DIR$/ch11_springboot_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/ch12_springboot_mybatis_2/pom.xml" />
+        <option value="$PROJECT_DIR$/ch13_springboot_mybatis3/pom.xml" />
+        <option value="$PROJECT_DIR$/ch14_springboot_transcation/pom.xml" />
+        <option value="$PROJECT_DIR$/ch15_springboot_springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/ch16_springboot_RESTful/pom.xml" />
+        <option value="$PROJECT_DIR$/ch17_springboot_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/ch18_springboot_dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/ch18_springboot_dubbo_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/ch18_springboot_dubbo_provide/pom.xml" />
+        <option value="$PROJECT_DIR$/ch18_springboot_dubbo_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/ch20_spirngboot_dubbo_ssm_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/ch21_springboot_dubbo_ssm_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/ch22_springboot_dubbo_ssm_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/ch26_springboot_java_1/pom.xml" />
+        <option value="$PROJECT_DIR$/ch27_springboot_java_2/pom.xml" />
+        <option value="$PROJECT_DIR$/ch28_spirngboot_close_logo/pom.xml" />
+        <option value="$PROJECT_DIR$/ch30_springboot_interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/ch39_springboot_logback/pom.xml" />
+        <option value="$PROJECT_DIR$/ch37_springboot_thymeleaf_first/pom.xml" />
+        <option value="$PROJECT_DIR$/ch40_springboot_thymeleaf_first/pom.xml" />
+        <option value="$PROJECT_DIR$/ch41_springboot_thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/ch42_springboot_thymeleaf-expression/pom.xml" />
+        <option value="$PROJECT_DIR$/ch050_springboot_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/ch052_springboot_dubbo_ssm_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/ch053_springboot_dubbo_ssm_consumer/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ch050_springboot_parent/ch051_springboot_dubbo_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/ch051_springboot_ssm_dubbo_interface/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

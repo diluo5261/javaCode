@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch08-SSM:war">
+    <output-path>$PROJECT_DIR$/ch08-SSM/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>ch08-SSM</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="ch08-SSM-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ch08-SSM:war exploded" />
+    </root>
+  </artifact>
+</component>

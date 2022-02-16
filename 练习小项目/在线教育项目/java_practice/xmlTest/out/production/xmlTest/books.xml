@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book sn="SN12356">
+        <name>时间简史</name>
+        <author>霍金</author>
+        <price>75</price>
+    </book>
+
+    <book sn="SN888999">
+        <name>java</name>
+        <author>laosi</author>
+        <price>9.9</price>
+    </book>
+</books>

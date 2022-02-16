@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <h1>表白墙</h1>
+    <p>输入后点击提交,会将信息显示在墙上</p>
+
+    <div class="row">
+        <span>谁</span> <input  class="edit" type="text">
+    </div>
+
+    <div class="row">
+        <span>对谁</span><input  class="edit"  type="text">
+    </div>
+
+    <div class="row">
+        <span>说什么</span><input  class="edit" type="text">
+    </div>
+
+    <div class="row">
+        <input type="button" value="提  交" id="submit">
+    </div>
+
+</div>
+
+<script>
+    //给提交按钮绑定单击事件
+    let submitButton = document.querySelector("#submit")
+    submitButton.onclick=function () {
+        //1. 获取编辑框中的内容
+        let edits= document.querySelectorAll(".edit");
+
+        let from = edits[0].value;
+        let to = edits[1].value;
+        let message = edits[2].value;
+
+
+        if (from=="" || to =="" || message ==""){
+            return;
+        }
+
+        //2.根据内容,创建HTML元素
+        let row = document.createElement("div");
+        row.className="row";
+        row.innerHTML= from + "对" + to +" 说了" + message ;
+
+        //3.把这个新的元素添加到DOM树中
+        document.querySelector(".container").appendChild(row);
+
+        for (let i = 0; i <edits.length ; i++) {
+            edits[i].value = '';
+
+        }
+
+    }
+
+</script>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    p {
+        text-align: center;
+        color: grey;
+        font-size: 14px;
+
+        padding: 10px 0;
+
+    }
+
+    .row {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    span {
+        width: 90px;
+        font-size: 20px;
+    }
+
+    input {
+        width: 310px;
+        height: 40px;
+    }
+
+    #submit {
+        width: 400px;
+        color: white;
+        font-size: 20px;
+        background-color: orange;
+
+        border: none;
+        border-radius: 5px;
+    }
+
+    #submit:active{
+        background-color: grey;
+    }
+</style>
+
+</body>
+</html>

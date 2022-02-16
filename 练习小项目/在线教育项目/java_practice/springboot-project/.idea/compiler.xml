@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ch27_springboot_java_2" />
+        <module name="ch18_springboot_dubbo_consumer" />
+        <module name="ch14_springboot_transcation" />
+        <module name="ch03_springboot_path" />
+        <module name="ch04_springboot_properties_yml_yaml" />
+        <module name="ch001_springboot_first" />
+        <module name="ch21_springboot_dubbo_ssm_provider" />
+        <module name="ch42_springboot_thymeleaf-expression" />
+        <module name="ch15_springboot_springmvc" />
+        <module name="ch002_springboot_mvc" />
+        <module name="ch30_springboot_interceptor" />
+        <module name="ch07_springboot_multi_enviroment_yml" />
+        <module name="ch08_springboot_customer_configer" />
+        <module name="ch10_spring_jsp" />
+        <module name="ch18_springboot_dubbo_provide" />
+        <module name="ch18_springboot_dubbo_interface" />
+        <module name="ch39_springboot_logback" />
+        <module name="ch052_springboot_dubbo_ssm_provider" />
+        <module name="ch053_springboot_dubbo_ssm_consumer" />
+        <module name="ch051_springboot_dubbo_ssm_interface" />
+        <module name="ch22_springboot_dubbo_ssm_consumer" />
+        <module name="ch09_springboot_customer_configuration" />
+        <module name="ch28_spirngboot_close_logo" />
+        <module name="ch40_springboot_thymeleaf_first" />
+        <module name="ch20_spirngboot_dubbo_ssm_interface" />
+        <module name="ch26_springboot_java_1" />
+        <module name="ch06_springboot_multi_enviroment_properties" />
+        <module name="ch12_springboot_mybatis_2" />
+        <module name="ch13_springboot_mybatis3" />
+        <module name="ch11_springboot_mybatis" />
+        <module name="ch17_springboot_redis" />
+        <module name="ch05_springboot_allboth_properties" />
+        <module name="ch16_springboot_RESTful" />
+        <module name="ch41_springboot_thymeleaf" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ch001_springboot_first" target="1.8" />
+      <module name="ch002_springboot_mvc" target="1.8" />
+      <module name="ch03_springboot_path" target="1.8" />
+      <module name="ch04_springboot_properties_yml_yaml" target="1.8" />
+      <module name="ch050_springboot_parent" target="8" />
+      <module name="ch051_springboot_dubbo_interface" target="8" />
+      <module name="ch051_springboot_dubbo_ssm_interface" target="8" />
+      <module name="ch051_springboot_ssm_dubbo_interface" target="8" />
+      <module name="ch052_springboot_dubbo_ssm_provider" target="8" />
+      <module name="ch053_springboot_dubbo_ssm_consumer" target="8" />
+      <module name="ch05_springboot_allboth_properties" target="1.8" />
+      <module name="ch06_springboot_multi_enviroment_properties" target="1.8" />
+      <module name="ch07_springboot_multi_enviroment_yml" target="1.8" />
+      <module name="ch08_springboot_customer_configer" target="1.8" />
+      <module name="ch09_springboot_customer_configuration" target="1.8" />
+      <module name="ch10_spring_jsp" target="1.8" />
+      <module name="ch11_springboot_mybatis" target="1.8" />
+      <module name="ch12_springboot_mybatis_2" target="1.8" />
+      <module name="ch13_springboot_mybatis3" target="1.8" />
+      <module name="ch14_springboot_transcation" target="1.8" />
+      <module name="ch15_springboot_springmvc" target="1.8" />
+      <module name="ch16_springboot_RESTful" target="1.8" />
+      <module name="ch17_springboot_redis" target="1.8" />
+      <module name="ch18_springboot_dubbo_consumer" target="1.8" />
+      <module name="ch18_springboot_dubbo_interface" target="8" />
+      <module name="ch18_springboot_dubbo_provide" target="1.8" />
+      <module name="ch18_springboot_dubbo_provider" target="1.8" />
+      <module name="ch20_spirngboot_dubbo_ssm_interface" target="8" />
+      <module name="ch21_springboot_dubbo_ssm_provider" target="1.8" />
+      <module name="ch22_springboot_dubbo_ssm_consumer" target="1.8" />
+      <module name="ch26_springboot_java_1" target="1.8" />
+      <module name="ch27_springboot_java_2" target="1.8" />
+      <module name="ch28_spirngboot_close_logo" target="1.8" />
+      <module name="ch30_springboot_interceptor" target="1.8" />
+      <module name="ch39_springboot_logback" target="1.8" />
+      <module name="ch40_springboot_thymeleaf_first" target="1.8" />
+      <module name="ch41_springboot_thymeleaf" target="1.8" />
+      <module name="ch42_springboot_thymeleaf-expression" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ch001_springboot_first" options="-parameters" />
+      <module name="ch002_springboot_mvc" options="-parameters" />
+      <module name="ch03_springboot_path" options="-parameters" />
+      <module name="ch04_springboot_properties_yml_yaml" options="-parameters" />
+      <module name="ch051_springboot_dubbo_ssm_interface" options="-parameters" />
+      <module name="ch052_springboot_dubbo_ssm_provider" options="-parameters" />
+      <module name="ch053_springboot_dubbo_ssm_consumer" options="-parameters" />
+      <module name="ch05_springboot_allboth_properties" options="-parameters" />
+      <module name="ch06_springboot_multi_enviroment_properties" options="-parameters" />
+      <module name="ch07_springboot_multi_enviroment_yml" options="-parameters" />
+      <module name="ch08_springboot_customer_configer" options="-parameters" />
+      <module name="ch09_springboot_customer_configuration" options="-parameters" />
+      <module name="ch10_spring_jsp" options="-parameters" />
+      <module name="ch11_springboot_mybatis" options="-parameters" />
+      <module name="ch12_springboot_mybatis_2" options="-parameters" />
+      <module name="ch13_springboot_mybatis3" options="-parameters" />
+      <module name="ch14_springboot_transcation" options="-parameters" />
+      <module name="ch15_springboot_springmvc" options="-parameters" />
+      <module name="ch16_springboot_RESTful" options="-parameters" />
+      <module name="ch17_springboot_redis" options="-parameters" />
+      <module name="ch18_springboot_dubbo_consumer" options="-parameters" />
+      <module name="ch18_springboot_dubbo_interface" options="" />
+      <module name="ch18_springboot_dubbo_provide" options="-parameters" />
+      <module name="ch18_springboot_dubbo_provider" options="-parameters" />
+      <module name="ch21_springboot_dubbo_ssm_provider" options="-parameters" />
+      <module name="ch22_springboot_dubbo_ssm_consumer" options="-parameters" />
+      <module name="ch26_springboot_java_1" options="-parameters" />
+      <module name="ch27_springboot_java_2" options="-parameters" />
+      <module name="ch28_spirngboot_close_logo" options="-parameters" />
+      <module name="ch30_springboot_interceptor" options="-parameters" />
+      <module name="ch39_springboot_logback" options="-parameters" />
+      <module name="ch40_springboot_thymeleaf_first" options="-parameters" />
+      <module name="ch41_springboot_thymeleaf" options="-parameters" />
+      <module name="ch42_springboot_thymeleaf-expression" options="-parameters" />
+    </option>
+  </component>
+</project>

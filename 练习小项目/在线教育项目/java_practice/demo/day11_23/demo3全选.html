@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="checkbox" class="person">大桥<br/>
+<input type="checkbox" class="person">小乔<br/>
+<input type="checkbox" class="person">貂蝉<br/>
+<input type="checkbox" class="person">孙尚香<br/>
+<input type="checkbox" id="all">全都要<br/>
+
+
+
+<script>
+    let all_button = document.querySelector("#all");
+    let  person = document.querySelectorAll(".person");
+
+
+
+    all_button.onclick=function () {
+        for (let i = 0; i <person.length ; i++) {
+            person[i].checked=all_button.checked;
+
+        }
+    }
+
+
+
+    for (let i = 0; i <person.length ; i++) {
+        person[i].onclick =function () {
+            all_button.checked=checkPerson(person);
+
+        }
+
+    }
+
+
+
+    function checkPerson(person) {
+        for (let i = 0; i <person.length ; i++) {
+            if (!person[i].checked){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+</script>
+
+
+</body>
+</html>

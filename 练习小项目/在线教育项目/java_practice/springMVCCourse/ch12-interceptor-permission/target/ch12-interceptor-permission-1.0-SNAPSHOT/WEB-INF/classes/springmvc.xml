@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+<!--    声明组件扫描器-->
+    <context:component-scan base-package="com.dilo.controller"/>
+
+<!--    声明springmvc框架中的视图解析器,帮助开发人员设置视图文件的路径-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--        前缀:视图文件的路径
+            前后都有 /  前面/ 表示根路径, 后面 / 表示是个路径
+ -->
+        <property name="prefix" value="/WEB-INF/view/"/>
+<!--        后缀:视图文件的扩展名-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+<!--    处理需要两步-->
+    <context:component-scan base-package="com.dilo.handler"/>
+    <mvc:annotation-driven/>
+
+<!--    生命拦截器：拦截器可以有0个或者多个
+        在框架中保存多个拦截器是ArrayList，
+        按照声明的先后顺序放入到ArrayList
+-->
+    <mvc:interceptors>
+<!--        声明一个拦截器-->
+        <mvc:interceptor>
+<!--            指定拦截器请求的uri地址
+                path：就是uri地址，可以使用通配符 **
+                ** ： 表示任意的字符，文件或者多级目录中的文件
+                http：//localhost：8080/myweb/user/listUser。do
+-->
+            <mvc:mapping path="/**"/>
+            <bean class="com.dilo.handler.MyInterceptor"/>
+
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>

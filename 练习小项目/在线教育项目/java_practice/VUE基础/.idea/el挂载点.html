@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>el挂载点</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{message}}
+    <h2>{{school.name}}{{school.mobile}}</h2>
+    <ul>
+        <li>{{location[0]}}</li>
+        <li>{{location[1]}}</li>
+    </ul>
+
+</div>
+<script>
+    var app=new Vue({
+        el: "#app",
+        data: {
+            message: "hello VUE!",
+            school:{
+                name:'大学',
+                mobile: '123456'
+            },
+            location: ["天津","北京","上海"]
+        }
+    })
+</script>
+</body>
+</html>

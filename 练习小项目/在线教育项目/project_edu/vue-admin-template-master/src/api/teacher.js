@@ -34,6 +34,13 @@ export default {
         })
 
     },
+    getAllTeacher(){
+        return request({
+            url: `/eduservice/eduteacher`,
+            method: 'get'
+        })
+
+    },
     updateTeacher(eduTeacher){
         return request({
             url: `/eduservice/eduteacher/updateTeacher`,

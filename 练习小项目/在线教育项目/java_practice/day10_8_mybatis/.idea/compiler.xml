@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ch02-param" />
+        <module name="ch01-hello-mybatis" />
+        <module name="bookstor" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bookstor" target="1.8" />
+      <module name="ch01-hello-mybatis" target="1.8" />
+      <module name="ch02-param" target="1.8" />
+      <module name="test2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
