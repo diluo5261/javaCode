@@ -1,1 +1,0 @@
-node-shop-interface:公共资源的项目 : 定义多个dubbo服务的使用的接口和相关类

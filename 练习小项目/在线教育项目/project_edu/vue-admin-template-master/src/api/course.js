@@ -22,6 +22,36 @@ export default {
             method: 'post',
             data: courseInfoForm //转化成json串进行传递
         })
+    },
+    getCoursePublishById(id){
+        return request({
+            url: `/eduservice/educourse/getCoursePublishById/${id}`,
+            method: 'get'
+        })
+    },
+    publishCourse(id){
+        return request({
+            url: `/eduservice/educourse/publishCourse/${id}`,
+            method: 'put'
+        })
+
+    },
+    //查询所有课程信息
+    getCourseInfo(){
+        return request({
+            url: `/eduservice/educourse/getCourseInfo`,
+            method: 'get'
+        })
+
+    },
+    //根据id删除课程相关信息
+    delCourseInfo(id){
+        return request({
+            url: `/eduservice/educourse/delCourseInfo/${id}`,
+            method: 'delete'
+        })
+
     }
+    
 
 }
