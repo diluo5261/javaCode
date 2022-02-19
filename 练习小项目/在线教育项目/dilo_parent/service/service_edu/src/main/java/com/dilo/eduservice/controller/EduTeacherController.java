@@ -49,6 +49,7 @@ public class EduTeacherController {
     public R getTeacherPage(@PathVariable Long current, @PathVariable Long limit){
         Page<EduTeacher> page = new Page<>(current,limit);
         eduTeacherService.page(page);
+
         List<EduTeacher> list = page.getRecords();;
         long total = page.getTotal();
 

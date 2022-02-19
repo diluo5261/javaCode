@@ -54,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/互联网/2021年尚硅谷Java后端面授班【2021年5月结课】/课件/源码与笔记/6.互联网高级技术&amp;大型企业级项目/Day089在线教育_4/day07源码/后端源码/guli_parent" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/service_base/src/main/java/com/dilo/baseservice/config" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.123304546" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -65,54 +65,49 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Document\code\dilo_parent\common\service_base\src\main\java\com\dilo\baseservice\config" />
       <recent name="D:\Document\code\dilo_parent\service\service_edu\src\test\java\com\dilo\eduservice" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dilo.cmsservice" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EduApplication">
-    <configuration name="CodeGenerator.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service_edu" />
+  <component name="RunManager" selected="Spring Boot.CmsApplication">
+    <configuration name="CodeGenerator.run (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_cms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.eduservice.*" />
+          <option name="PATTERN" value="com.dilo.cmsservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.eduservice" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.eduservice.CodeGenerator" />
+      <option name="PACKAGE_NAME" value="com.dilo.cmsservice" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.cmsservice.CodeGenerator" />
       <option name="METHOD_NAME" value="run" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExcelTest.readTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service_edu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dilo.eduservice.excel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.eduservice.excel" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.eduservice.excel.ExcelTest" />
-      <option name="METHOD_NAME" value="readTest" />
+    <configuration name="VodTest.delTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_oss" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VodTest" />
+      <option name="METHOD_NAME" value="delTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExcelTest.writeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service_edu" />
+    <configuration name="CmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service_cms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.eduservice.excel.*" />
+          <option name="PATTERN" value="com.dilo.cmsservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.eduservice.excel" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.eduservice.excel.ExcelTest" />
-      <option name="METHOD_NAME" value="writeTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.cmsservice.CmsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,12 +132,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VodApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service_vod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.vodservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.vodservice.VodApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CmsApplication" />
         <item itemvalue="Spring Boot.OssApplication" />
-        <item itemvalue="JUnit.CodeGenerator.run" />
-        <item itemvalue="JUnit.ExcelTest.readTest" />
-        <item itemvalue="JUnit.ExcelTest.writeTest" />
+        <item itemvalue="Spring Boot.VodApplication" />
+        <item itemvalue="JUnit.CodeGenerator.run (1)" />
+        <item itemvalue="JUnit.VodTest.delTest" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +175,11 @@
       <workItem from="1644973711922" duration="694000" />
       <workItem from="1644974948067" duration="16443000" />
       <workItem from="1645060648000" duration="10403000" />
-      <workItem from="1645099793678" duration="11168000" />
+      <workItem from="1645099793678" duration="20105000" />
+      <workItem from="1645169031269" duration="7669000" />
+      <workItem from="1645195802809" duration="4583000" />
+      <workItem from="1645200475182" duration="247000" />
+      <workItem from="1645233966543" duration="25099000" />
     </task>
     <servers />
   </component>

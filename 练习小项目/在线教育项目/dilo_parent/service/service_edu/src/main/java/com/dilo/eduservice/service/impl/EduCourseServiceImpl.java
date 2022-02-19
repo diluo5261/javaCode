@@ -3,6 +3,7 @@ package com.dilo.eduservice.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.dilo.baseservice.handler.DiloException;
 import com.dilo.commonutils.ResultCode;
+import com.dilo.eduservice.client.VodClient;
 import com.dilo.eduservice.entity.EduChapter;
 import com.dilo.eduservice.entity.EduCourse;
 import com.dilo.eduservice.entity.EduCourseDescription;
@@ -19,6 +20,9 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.DeleteMapping;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>
@@ -43,6 +47,9 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
 
     @Autowired
     private EduCourseDescriptionMapper courseDescriptionMapper;
+
+    @Autowired
+    private VodClient vodClient;
 
     @Override
     public String addCourseInfo(CourseInfoForm courseInfoForm) {
@@ -119,6 +126,21 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     @Override
     public void delCourseInfo(String id) {
         //1.删除视频
+        //1.1查询相关小节
+        QueryWrapper<EduVideo> videoIdWrapper = new QueryWrapper<>();
+        videoIdWrapper.eq("course_id",id);
+        List<EduVideo> videoList = videoMapper.selectList(videoIdWrapper);
+        //1.2遍历获取id
+        List<String> videoIdList = new ArrayList<>();
+        for (EduVideo eduVideo:videoList) {
+            videoIdList.add(eduVideo.getVideoSourceId());
+        }
+
+        //1.3判断,调接口
+        if (videoIdList.size() >0){
+            vodClient.delVideoList(videoIdList);
+        }
+
         //TODO
 
         //2.删除小节

@@ -2,6 +2,7 @@ package com.dilo.eduservice.controller;
 
 
 import com.dilo.commonutils.R;
+import com.dilo.eduservice.client.VodClient;
 import com.dilo.eduservice.entity.EduVideo;
 import com.dilo.eduservice.service.EduVideoService;
 import io.swagger.annotations.Api;
@@ -27,9 +28,13 @@ public class EduVideoController {
     @Autowired
     private EduVideoService videoService;
 
+    @Autowired
+    private VodClient vodClient;
+
     @ApiOperation("添加小节")
     @PostMapping("/addVideo")
     public R addVideo(@RequestBody EduVideo eduVideo){
+        System.out.println(eduVideo);
         videoService.save(eduVideo);
         return R.ok();
     }
@@ -37,9 +42,15 @@ public class EduVideoController {
     @ApiOperation("根据id删除小节")
     @DeleteMapping("delVideo/{id}")
     public R delVideo(@PathVariable String id){
+        EduVideo eduVideo = videoService.getById(id);
+        String videoId = eduVideo.getVideoSourceId();
+
+        if (videoId != null){
+            vodClient.delVideo(videoId);
+        }
+
         videoService.removeById(id);
 
-    //TODO 删除小节的同时删除阿里云视频
         return R.ok();
     }
 
@@ -56,6 +67,8 @@ public class EduVideoController {
         videoService.updateById(eduVideo);
         return R.ok();
     }
+
+
 
 
 }
