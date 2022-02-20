@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Api("前台展示")
+@Api(description = "前台展示")
 @RestController
 @RequestMapping("/cmsservice/banner")
 @CrossOrigin

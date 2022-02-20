@@ -24,7 +24,7 @@ public class CrmBannerServiceImpl extends ServiceImpl<CrmBannerMapper, CrmBanner
     @Autowired
     private CrmBannerMapper bannerMapper;
 
-    @Cacheable(value = "banner",key = "selectIndexList")
+    @Cacheable(value = "banner", key = "'selectIndexList'")
     @Override
     public List<CrmBanner> getAllBanner() {
         List<CrmBanner> bannerList = bannerMapper.selectList(null);
