@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletRequest;
  * @since 2022-02-20
  */
 
-@Api(description = "课程管理")
+@Api(description="前台用户会员管理")
 @RestController
 @RequestMapping("/ucenterservice/member")
 @CrossOrigin
@@ -32,20 +32,17 @@ public class UcenterMemberController {
     @Autowired
     private UcenterMemberService memberService;
 
-
-    @ApiOperation("用户注册")
+    @ApiOperation(value = "用户注册")
     @PostMapping("register")
     public R register(@RequestBody RegisterVo registerVo){
         memberService.register(registerVo);
-
         return R.ok();
     }
 
-    @ApiOperation("用户登录")
-    @PostMapping("/login")
+    @ApiOperation(value = "用户登录")
+    @PostMapping("login")
     public R login(@RequestBody LoginVo loginVo){
         String token = memberService.login(loginVo);
-
         return R.ok().data("token",token);
     }
 
@@ -54,9 +51,8 @@ public class UcenterMemberController {
     public R getUcenterByToken(HttpServletRequest request){
         String memberId = JwtUtils.getMemberIdByJwtToken(request);
         UcenterMember ucenterMember = memberService.getById(memberId);
+        System.out.println("getbyToken666666666666666666666666666" + ucenterMember);
         return R.ok().data("ucenterMember",ucenterMember);
     }
-
-
 }
 

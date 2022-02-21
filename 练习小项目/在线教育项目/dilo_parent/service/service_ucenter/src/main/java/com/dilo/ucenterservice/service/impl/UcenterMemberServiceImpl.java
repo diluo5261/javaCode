@@ -30,6 +30,7 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
     @Autowired
     private RedisTemplate<String,String> redisTemplate;
 
+    //用户注册
     @Override
     public void register(RegisterVo registerVo) {
         //1.获取参数,验空
@@ -43,7 +44,7 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
                 StringUtils.isEmpty(password)||
                 StringUtils.isEmpty(code)
         ){
-            throw new DiloException(ResultCode.ERROR,"注册信心缺失");
+            throw new DiloException(ResultCode.ERROR,"注册信息缺失");
         }
 
         //2.验证手机号是否重复
@@ -99,8 +100,7 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
         }
 
         //4.生成token字符串
-        String token = JwtUtils.getJwtToken(ucenterMember.getId(), ucenterMember.getNickname());
-
+        String token = JwtUtils.getJwtToken(ucenterMember.getId(),ucenterMember.getNickname());
 
         return token;
     }

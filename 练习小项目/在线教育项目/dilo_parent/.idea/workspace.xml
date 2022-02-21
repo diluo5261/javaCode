@@ -54,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/dilo/ucenterservice/utils" />
+    <property name="last_opened_file_path" value="E:/互联网/2021年尚硅谷Java后端面授班【2021年5月结课】/课件/源码与笔记/6.互联网高级技术&amp;大型企业级项目/Day094在线教育_9/day12源码/后台源码" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.123304546" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -76,7 +76,7 @@
       <recent name="com.dilo.cmsservice" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CodeGenerator.run">
+  <component name="RunManager" selected="Spring Boot.ServiceSmsApplication">
     <configuration name="CodeGenerator.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service_ucenter" />
       <extension name="coverage">
@@ -139,26 +139,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VodApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service_vod" />
+    <configuration name="ServiceUcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service_ucenter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.vodservice.*" />
+          <option name="PATTERN" value="com.dilo.ucenterservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.vodservice.VodApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.ucenterservice.ServiceUcApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CodeGenerator.run" />
         <item itemvalue="Spring Boot.ServiceSmsApplication" />
+        <item itemvalue="Spring Boot.ServiceUcApplication" />
         <item itemvalue="Spring Boot.CmsApplication" />
+        <item itemvalue="JUnit.CodeGenerator.run" />
         <item itemvalue="Spring Boot.OssApplication" />
-        <item itemvalue="Spring Boot.VodApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +187,7 @@
       <workItem from="1645195802809" duration="4583000" />
       <workItem from="1645200475182" duration="247000" />
       <workItem from="1645233966543" duration="27703000" />
-      <workItem from="1645337167828" duration="14579000" />
+      <workItem from="1645337167828" duration="30558000" />
     </task>
     <servers />
   </component>

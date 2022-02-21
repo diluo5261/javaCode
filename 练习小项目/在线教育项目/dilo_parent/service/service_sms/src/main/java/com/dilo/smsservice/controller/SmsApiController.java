@@ -41,6 +41,7 @@ public class SmsApiController {
         //4.调用接口服务,发送短信,
         HashMap<String, String> map = new HashMap<>();
         map.put("code",code);
+        System.out.println("验证码为:"+code);
         boolean isSend = smsService.sendSmsPhone(phone,map);
 
         //5.发送成功,验证码存入redis,时效5分钟
