@@ -151,6 +151,7 @@ import "~/assets/css/theme.css";
 import "~/assets/css/global.css";
 import "~/assets/css/web.css";
 import cookie from "js-cookie";
+import loginApi from "@/api/login";
 
 export default {
   data() {
@@ -167,9 +168,31 @@ export default {
     };
   },
   created() {
+    this.token = this.$route.query.token;
+
+    //判断是否是微信登录
+    if(this.token){
+      this.wxLogin();
+    }
+
+
     this.showInfo();
+
   },
   methods: {
+    wxLogin(){
+      //把token存入cookie
+       cookie.set("dilo_token", this.token, {domain: "localhost"});
+
+       //查询用户信息
+        loginApi.getUcenterByToken().then(response => {
+           if (response.data.success) {
+             this.loginInfo = response.data.data.ucenterMember
+             }
+
+        })
+
+    },
     showInfo() {
       console.log("10");
       console.log(cookie.get("dilo_ucenter"));

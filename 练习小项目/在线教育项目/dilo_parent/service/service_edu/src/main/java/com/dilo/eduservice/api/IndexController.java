@@ -34,7 +34,7 @@ public class IndexController {
 
         //8条课程信息
         QueryWrapper<EduCourse> courseWrapper = new QueryWrapper<>();
-        courseWrapper.orderByDesc("gmt_create").last("limit 8");
+        courseWrapper.orderByDesc("gmt_create").eq("status","Normal").last("limit 8");
         List<EduCourse> courseList = courseService.list(courseWrapper);
 
         //4条讲师信息

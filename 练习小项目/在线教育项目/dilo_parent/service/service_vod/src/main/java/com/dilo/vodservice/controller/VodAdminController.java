@@ -1,7 +1,10 @@
 package com.dilo.vodservice.controller;
 
 import com.aliyuncs.DefaultAcsClient;
+import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
+import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthRequest;
+import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthResponse;
 import com.dilo.baseservice.handler.DiloException;
 import com.dilo.commonutils.R;
 
@@ -89,6 +92,37 @@ public class VodAdminController {
         } catch (Exception e) {
             e.printStackTrace();
             throw  new DiloException(ResultCode.ERROR,"批量删除视频失败");
+        }
+    }
+
+    @ApiOperation(value = "根据视频id获取视频播放凭证")
+    @GetMapping("getPlayAuth/{vid}")
+    public R getPlayAuth(@PathVariable String vid){
+        String accessKeyId = VideoConstantPropertiesUtil.ACCESS_KEY_ID;
+        String accessKeySecret = VideoConstantPropertiesUtil.ACCESS_KEY_SECRET;
+
+        try {
+            //（1）创建初始化对象
+            DefaultAcsClient client = AliyunVodSDKUtils.initVodClient(accessKeyId, accessKeySecret);
+
+            //（2）创建request、response对象
+            GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
+            GetVideoPlayAuthResponse response = new GetVideoPlayAuthResponse();
+
+            //（3）向request设置视频id
+            request.setVideoId(vid);
+
+            //播放凭证有过期时间，默认值：100秒 。取值范围：100~3000。
+            //request.setAuthInfoTimeout(200L);
+
+            //（4）调用初始化方法实现功能
+            response = client.getAcsResponse(request);
+
+            //（5）调用方法返回response对象，获取内容
+            String playAuth = response.getPlayAuth();
+            return R.ok().data("playAuth",playAuth);
+        } catch (ClientException e) {
+            throw new DiloException(20001,"获取视频凭证失败");
         }
     }
 }

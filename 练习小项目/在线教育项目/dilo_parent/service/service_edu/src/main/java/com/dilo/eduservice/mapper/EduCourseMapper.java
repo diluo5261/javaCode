@@ -3,6 +3,7 @@ package com.dilo.eduservice.mapper;
 import com.dilo.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.dilo.eduservice.entity.vo.CoursePublishVo;
+import com.dilo.eduservice.entity.vo.CourseWebVo;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -17,4 +18,6 @@ import org.apache.ibatis.annotations.Mapper;
 public interface EduCourseMapper extends BaseMapper<EduCourse> {
 
     CoursePublishVo getCoursePublishById(String id);
+
+    CourseWebVo getCourseWebVo(String id);
 }

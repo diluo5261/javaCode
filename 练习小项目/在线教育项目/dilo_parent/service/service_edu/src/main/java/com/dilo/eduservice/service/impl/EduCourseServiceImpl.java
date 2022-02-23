@@ -1,6 +1,7 @@
 package com.dilo.eduservice.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.dilo.baseservice.handler.DiloException;
 import com.dilo.commonutils.ResultCode;
 import com.dilo.eduservice.client.VodClient;
@@ -10,6 +11,8 @@ import com.dilo.eduservice.entity.EduCourseDescription;
 import com.dilo.eduservice.entity.EduVideo;
 import com.dilo.eduservice.entity.vo.CourseInfoForm;
 import com.dilo.eduservice.entity.vo.CoursePublishVo;
+import com.dilo.eduservice.entity.vo.CourseQueryVo;
+import com.dilo.eduservice.entity.vo.CourseWebVo;
 import com.dilo.eduservice.mapper.EduChapterMapper;
 import com.dilo.eduservice.mapper.EduCourseDescriptionMapper;
 import com.dilo.eduservice.mapper.EduCourseMapper;
@@ -19,10 +22,13 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.DeleteMapping;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -163,6 +169,57 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
             throw new DiloException(ResultCode.ERROR,"删除课程失败");
         }
 
+    }
+
+    //待条件的分页查询
+    @Override
+    public Map<String, Object> getCourseApiPageVo(Page<EduCourse> eduCoursePage, CourseQueryVo courseQueryVo) {
+        //1.取出查询条件
+        String subjectParentId = courseQueryVo.getSubjectParentId();
+        String subjectId = courseQueryVo.getSubjectId();
+        String buyCountSort = courseQueryVo.getBuyCountSort();
+        String gmtCreateSort = courseQueryVo.getGmtCreateSort();
+        String priceSort = courseQueryVo.getPriceSort();
+
+        //2.判断条件是否为空,不为空拼写到查询条件
+        QueryWrapper<EduCourse> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq(!StringUtils.isEmpty(subjectParentId ),"subject_parent_id",subjectParentId )
+                .eq(!StringUtils.isEmpty(subjectId),"subject_id",subjectId)
+                .orderByDesc(!StringUtils.isEmpty(buyCountSort),"buy_count")
+                .orderByDesc(!StringUtils.isEmpty(gmtCreateSort),"gmt_create")
+                .orderByDesc(!StringUtils.isEmpty(priceSort),"price")
+                .eq("status","Normal");
+
+        //3.分页查询
+        courseMapper.selectPage(eduCoursePage,queryWrapper);
+
+
+        //4.封装数据
+        List<EduCourse> records = eduCoursePage.getRecords();
+        long current = eduCoursePage.getCurrent();
+        long pages = eduCoursePage.getPages();
+        long size = eduCoursePage.getSize();
+        long total = eduCoursePage.getTotal();
+        boolean hasNext = eduCoursePage.hasNext();
+        boolean hasPrevious = eduCoursePage.hasPrevious();
+
+        HashMap<String, Object> map = new HashMap<>();
+
+        map.put("items", records);
+        map.put("current", current);
+        map.put("pages", pages);
+        map.put("size", size);
+        map.put("total", total);
+        map.put("hasNext", hasNext);
+        map.put("hasPrevious", hasPrevious);
+
+        return map;
+    }
+
+    @Override
+    public CourseWebVo getCourseWebVo(String id) {
+        CourseWebVo courseWebVo = courseMapper.getCourseWebVo(id);
+        return courseWebVo;
     }
 
 

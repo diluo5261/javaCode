@@ -54,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/互联网/2021年尚硅谷Java后端面授班【2021年5月结课】/课件/源码与笔记/6.互联网高级技术&amp;大型企业级项目/Day094在线教育_9/day12源码/后台源码" />
+    <property name="last_opened_file_path" value="E:/互联网/2021年尚硅谷Java后端面授班【2021年5月结课】/课件/源码与笔记/6.互联网高级技术&amp;大型企业级项目/Day096在线教育_11/day14源码/后端源码/guli_parent" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.123304546" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -65,28 +65,29 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Document\code\dilo_parent\service\service_wxlogin\src\main\java\com\dilo\wxlogin\utils" />
+      <recent name="D:\Document\code\dilo_parent\service\service_wxlogin\src\main\resources" />
       <recent name="D:\Document\code\dilo_parent\service\service_ucenter\src\main\java\com\dilo\ucenterservice\utils" />
       <recent name="D:\Document\code\dilo_parent\service\service_sms\src\main\java\com\dilo\smsservice\utils" />
       <recent name="D:\Document\code\dilo_parent\common\common_utils\src\main\java\com\dilo\commonutils\utils" />
-      <recent name="D:\Document\code\dilo_parent\common\service_base\src\main\java\com\dilo\baseservice\config" />
-      <recent name="D:\Document\code\dilo_parent\service\service_edu\src\test\java\com\dilo\eduservice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dilo.wxlogin" />
       <recent name="com.dilo.ucenterserver" />
       <recent name="com.dilo.cmsservice" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceSmsApplication">
-    <configuration name="CodeGenerator.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service_ucenter" />
+  <component name="RunManager" selected="Spring Boot.WxLoginApplication">
+    <configuration name="CodeGenerator.run (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_wxlogin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.ucenterserver.*" />
+          <option name="PATTERN" value="com.dilo.wxlogin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dilo.ucenterserver" />
-      <option name="MAIN_CLASS_NAME" value="com.dilo.ucenterserver.CodeGenerator" />
+      <option name="PACKAGE_NAME" value="com.dilo.wxlogin" />
+      <option name="MAIN_CLASS_NAME" value="com.dilo.wxlogin.CodeGenerator" />
       <option name="METHOD_NAME" value="run" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -109,19 +110,6 @@
     <configuration name="EduApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service_edu" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.eduservice.EduApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OssApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service_oss" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dilo.ossservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.ossservice.OssApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,13 +140,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VodApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_vod" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.vodservice.VodApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WxLoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service_wxlogin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.wxlogin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.wxlogin.WxLoginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.WxLoginApplication" />
+        <item itemvalue="JUnit.CodeGenerator.run (1)" />
         <item itemvalue="Spring Boot.ServiceSmsApplication" />
         <item itemvalue="Spring Boot.ServiceUcApplication" />
         <item itemvalue="Spring Boot.CmsApplication" />
-        <item itemvalue="JUnit.CodeGenerator.run" />
-        <item itemvalue="Spring Boot.OssApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +195,9 @@
       <workItem from="1645195802809" duration="4583000" />
       <workItem from="1645200475182" duration="247000" />
       <workItem from="1645233966543" duration="27703000" />
-      <workItem from="1645337167828" duration="30558000" />
+      <workItem from="1645337167828" duration="31166000" />
+      <workItem from="1645490198586" duration="15621000" />
+      <workItem from="1645579760480" duration="6071000" />
     </task>
     <servers />
   </component>
