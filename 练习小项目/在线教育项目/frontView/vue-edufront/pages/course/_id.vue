@@ -33,9 +33,16 @@
                 <a class="c-fff vam" title="收藏" href="#" >收藏</a>
               </span>
             </section>
-            <section class="c-attr-mt">
+
+            <section v-if="isbuy || Number(courseWebVo.price)===0" class="c-attr-mt">
               <a href="#" title="立即观看" class="comm-btn c-btn-3">立即观看</a>
             </section>
+
+
+            <section class="c-attr-mt" v-else>
+              <a href="#" title="立即购买" @click="createOrderInfo()" class="comm-btn c-btn-3">立即购买</a>
+            </section>
+
           </section>
         </aside>
         <aside class="thr-attr-box">
@@ -167,16 +174,56 @@
 
 <script>
 import course from "@/api/course";
+import create from "@/api/course";
 export default {
   //异步请求调用
+  // asyncData({ params, error }) {
+  //   //根据课程查询相关信息
+  //   return course.getCourseWebInfo(params.id).then((response) => {
+  //     return {
+  //       courseId:parames.id,
+  //       courseWebVo: response.data.data.courseWebVo,
+  //       chapterVideoList: response.data.data.chapterVoList,
+  //     };
+  //   });
+  // },
   asyncData({ params, error }) {
     //根据课程查询相关信息
     return course.getCourseWebInfo(params.id).then((response) => {
-      return {
-        courseWebVo: response.data.data.courseWebVo,
-        chapterVideoList: response.data.data.chapterVoList,
-      };
+      return { courseId:parames.id };
     });
   },
+  data(){
+    return {
+      courseWebVo: {},
+      chapterVideoList:{},
+      isBuy:false
+    }
+
+  },
+  created(){
+
+  },
+  methods:{
+    courseInfoInit(){
+      course.getCourseWebInfo(this.courseId).then(response =>{
+        this.courseWebVo= response.data.data.courseWebVo,
+        this.chapterVideoList= response.data.data.chapterVoList,
+        this.isBuy = response.data.data.isBuyCourse
+      })
+
+    },
+    createOrderInfo(){
+      order.createOrder(this.courseId).then(response =>{
+        if(response.data.success){
+          this.$message.success("创建订单成功!")
+
+          //跳转到订单页面
+          this.$router.push({path:`/order/${response.data.data.orderNo}`});
+        }
+      })
+      
+    }
+  }
 };
 </script>

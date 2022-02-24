@@ -3,12 +3,14 @@ package com.dilo.ucenterservice.controller;
 
 import com.dilo.commonutils.R;
 import com.dilo.commonutils.utils.JwtUtils;
+import com.dilo.commonutils.vo.UcenterMemberForOrder;
 import com.dilo.ucenterservice.entity.UcenterMember;
 import com.dilo.ucenterservice.entity.vo.LoginVo;
 import com.dilo.ucenterservice.entity.vo.RegisterVo;
 import com.dilo.ucenterservice.service.UcenterMemberService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -53,6 +55,15 @@ public class UcenterMemberController {
         UcenterMember ucenterMember = memberService.getById(memberId);
         System.out.println("getbyToken666666666666666666666666666" + ucenterMember);
         return R.ok().data("ucenterMember",ucenterMember);
+    }
+
+    @ApiOperation("根据memberId获取用户信息跨模块")
+    @GetMapping("/getUncenterForOrder/{memberId}")
+    public UcenterMemberForOrder getUncenterForOrder(@PathVariable("memberId") String memberId){
+        UcenterMember ucenterMember = memberService.getById(memberId);
+        UcenterMemberForOrder ucenterMemberForOrder = new UcenterMemberForOrder();
+        BeanUtils.copyProperties(ucenterMember,ucenterMemberForOrder);
+        return ucenterMemberForOrder;
     }
 }
 
