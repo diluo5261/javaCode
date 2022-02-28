@@ -65,5 +65,13 @@ public class UcenterMemberController {
         BeanUtils.copyProperties(ucenterMember,ucenterMemberForOrder);
         return ucenterMemberForOrder;
     }
+
+    @ApiOperation("统计注册人数远程调用")
+    @GetMapping("/countRegister/{day}")
+    public int countRegister(@PathVariable("day") String day){
+        Integer count = memberService.countRegister(day);
+
+        return count;
+    }
 }
 

@@ -54,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_order/src/main/java/com/dilo/orderservice/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/com/dilo/gateway/config" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.123304546" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -65,11 +65,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Document\code\dilo_parent\infrastructure\api_gateway\src\main\java\com\dilo\gateway\config" />
+      <recent name="D:\Document\code\dilo_parent\service\service_statistics\src\main\java\com\dilo\staService\utils" />
       <recent name="D:\Document\code\dilo_parent\service\service_order\src\main\java\com\dilo\orderservice\utils" />
       <recent name="D:\Document\code\dilo_parent\service\service_wxlogin\src\main\java\com\dilo\wxlogin\utils" />
       <recent name="D:\Document\code\dilo_parent\service\service_wxlogin\src\main\resources" />
-      <recent name="D:\Document\code\dilo_parent\service\service_ucenter\src\main\java\com\dilo\ucenterservice\utils" />
-      <recent name="D:\Document\code\dilo_parent\service\service_sms\src\main\java\com\dilo\smsservice\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Document\code\dilo_parent\infrastructure" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.dilo.staService" />
@@ -79,7 +82,7 @@
       <recent name="com.dilo.ucenterserver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CodeGenerator.run (2)">
+  <component name="RunManager" selected="Spring Boot.StaApplication">
     <configuration name="CodeGenerator.run (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service_wxlogin" />
       <extension name="coverage">
@@ -169,6 +172,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceUcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_ucenter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.ucenterservice.ServiceUcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_statistics" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.staService.StaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VodApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service_vod" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.vodservice.VodApplication" />
@@ -227,7 +244,9 @@
       <workItem from="1645337167828" duration="31166000" />
       <workItem from="1645490198586" duration="15621000" />
       <workItem from="1645579760480" duration="14482000" />
-      <workItem from="1645668568966" duration="10713000" />
+      <workItem from="1645668568966" duration="11808000" />
+      <workItem from="1645751196200" duration="7533000" />
+      <workItem from="1645794444538" duration="1254000" />
     </task>
     <servers />
   </component>

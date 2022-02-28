@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @Api(description = "模拟登录")
 @RestController
 @RequestMapping("/eduuser")
-@CrossOrigin//跨域注解
+//@CrossOrigin//跨域注解
 public class EduLoginController {
 
     @ApiOperation(value = "登录")

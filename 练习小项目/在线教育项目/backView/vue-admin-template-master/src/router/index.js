@@ -150,6 +150,27 @@ export const constantRouterMap = [
 
     ]
   },
+  {
+    path: '/sta',
+    component: Layout,
+    redirect: '/example/table',
+    name: '统计分析',
+    meta: { title: '统计分析', icon: 'example' },
+    children: [
+      {
+        path: 'create',
+        name: '生成统计数据',
+        component: () => import('@/views/sta/create'),
+        meta: { title: '课程分类列表', icon: 'tree' }
+      },
+      {
+        path: 'show',
+        name: '展示统计数据',
+        component: () => import('@/views/sta/show'),
+        meta: { title: '展示统计数据', icon: 'tree' }
+      }
+    ]
+  },
 
   {
     path: '/form',
