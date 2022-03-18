@@ -1,0 +1,5 @@
+com\dilo\gmall\gateway\config\RedisConfig$1.class
+com\dilo\gmall\gateway\filter\AuthGlobalFilter.class
+com\dilo\gmall\gateway\config\RedisConfig.class
+com\dilo\gmall\gateway\ServerGatewayApplication.class
+com\dilo\gmall\gateway\config\CorsConfig.class

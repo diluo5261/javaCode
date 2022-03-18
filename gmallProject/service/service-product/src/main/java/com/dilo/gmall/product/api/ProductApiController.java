@@ -2,9 +2,7 @@ package com.dilo.gmall.product.api;
 
 import com.alibaba.fastjson.JSONObject;
 import com.dilo.gmall.common.result.Result;
-import com.dilo.gmall.model.product.BaseCategoryView;
-import com.dilo.gmall.model.product.SkuInfo;
-import com.dilo.gmall.model.product.SpuSaleAttr;
+import com.dilo.gmall.model.product.*;
 import com.dilo.gmall.product.service.ManagerService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -78,6 +76,21 @@ public class ProductApiController {
         //获取所有分类数据的集合
         List<JSONObject> baseCategoryList = managerService.getBaseCategoryList();
         return Result.ok(baseCategoryList);
+    }
+
+    @ApiOperation("通过品牌Id查询数据")
+    @GetMapping("inner/getTradeMarkById/{tmId}")
+    public BaseTrademark getTradeMarkById(@PathVariable Long tmId){
+        BaseTrademark trademark = managerService.getTradeMarkById(tmId);
+        return trademark;
+    }
+
+
+    @ApiOperation("通过skuId查询销售属性和值集合")
+    @GetMapping("inner/getAttrList/{skuId}")
+    public List<BaseAttrInfo> getAttrList(@PathVariable Long skuId){
+        List<BaseAttrInfo> attrList = managerService.getAttrList(skuId);
+        return attrList;
     }
 
 

@@ -1,0 +1,6 @@
+com\dilo\gmall\order\service\impl\OrderServiceImpl.class
+com\dilo\gmall\order\controller\OrderApiController.class
+com\dilo\gmall\order\mapper\OrderInfoMapper.class
+com\dilo\gmall\order\mapper\OrderDetailMapper.class
+com\dilo\gmall\order\service\OrderService.class
+com\dilo\gmall\order\ServiceOrderApplication.class

@@ -1,0 +1,4 @@
+com\dilo\gmall\item\ServiceItemApplication.class
+com\dilo\gmall\item\service\impl\ItemServiceImpl.class
+com\dilo\gmall\item\service\ItemService.class
+com\dilo\gmall\item\controller\ItemApiController.class

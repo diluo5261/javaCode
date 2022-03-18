@@ -1,0 +1,6 @@
+com\dilo\gmall\all\controller\IndexController.class
+com\dilo\gmall\all\WebAllApplication.class
+com\dilo\gmall\all\controller\ItemController.class
+com\dilo\gmall\all\controller\OrderController.class
+com\dilo\gmall\all\controller\CartController.class
+com\dilo\gmall\all\controller\PassportController.class

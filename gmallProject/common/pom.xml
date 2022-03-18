@@ -15,6 +15,7 @@
         <module>common_util</module>
         <module>service_util</module>
         <module>web-util</module>
+        <module>rabbit-util</module>
     </modules>
     <packaging>pom</packaging>
 

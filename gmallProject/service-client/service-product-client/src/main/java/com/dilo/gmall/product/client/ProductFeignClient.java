@@ -1,9 +1,7 @@
 package com.dilo.gmall.product.client;
 
 import com.dilo.gmall.common.result.Result;
-import com.dilo.gmall.model.product.BaseCategoryView;
-import com.dilo.gmall.model.product.SkuInfo;
-import com.dilo.gmall.model.product.SpuSaleAttr;
+import com.dilo.gmall.model.product.*;
 import com.dilo.gmall.product.client.impl.ProductDegradeFeignClient;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -59,5 +57,21 @@ public interface ProductFeignClient {
      */
     @GetMapping("/api/product/inner/getBaseCategoryList")
     public Result getBaseCategoryList();
+
+    /**
+     * 通过ksuId查询品牌信息
+     * @param tmId
+     * @return
+     */
+    @GetMapping("/api/product/inner/getTradeMarkById/{tmId}")
+    public BaseTrademark getTradeMarkById(@PathVariable Long tmId);
+
+    /**
+     * 通过skuId查询平台属性和平台属性值集合
+     * @param skuId
+     * @return
+     */
+    @GetMapping("/api/product/inner/getAttrList/{skuId}")
+    public List<BaseAttrInfo> getAttrList(@PathVariable Long skuId);
 
 }

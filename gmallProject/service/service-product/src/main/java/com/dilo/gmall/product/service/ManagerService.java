@@ -186,4 +186,18 @@ public interface ManagerService extends IService<SpuInfo> {
      * @return
      */
     List<JSONObject> getBaseCategoryList();
+
+    /**
+     * 通过商品id来查询数据
+     * @param tmId
+     * @return
+     */
+    BaseTrademark getTradeMarkById(Long tmId);
+
+    /**
+     * 通过skuId查询平台属性
+     * @param skuId
+     * @return
+     */
+    List<BaseAttrInfo> getAttrList(Long skuId);
 }

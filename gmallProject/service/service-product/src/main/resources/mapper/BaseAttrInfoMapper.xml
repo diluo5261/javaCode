@@ -9,7 +9,7 @@
             type :返回结果集的数据类型
             autoMapping:自动映射,(数据库表的字段,非数据库表的字段不能映射),不能有重复字段,需要起别名
     -->
-    <resultMap id="BaseAttrInfoMap" type="com.dilo.gmall.model.product.BaseAttrInfo" autoMapping="true">
+    <resultMap id="baseAttrInfoMap" type="com.dilo.gmall.model.product.BaseAttrInfo" autoMapping="true">
         <!--
             id:表示主键
             column:执行sql语句之后显示的字段
@@ -37,7 +37,7 @@
         </collection>
     </resultMap>
 
-    <select id="selectBaseAttrInfoList" resultMap="BaseAttrInfoMap">
+    <select id="selectBaseAttrInfoList" resultMap="baseAttrInfoMap">
         SELECT
         bai.id, bai.attr_name, bai.category_id,  bai.category_level,
         bav.id attr_value_id, bav.value_name,  bav.attr_id
@@ -56,6 +56,24 @@
             </if>
         </where>
         order by bai.category_level, bai.id
+    </select>
+
+    <select id="selectBaseAttrInfoListBySkuId" resultMap="baseAttrInfoMap">
+        SELECT
+            bai.id,
+            bai.attr_name,
+            bai.category_id,
+            bai.category_level,
+            bav.id attr_value_id,
+            bav.value_name,
+            bav.attr_id
+        FROM
+            base_attr_info bai
+                INNER JOIN base_attr_value bav ON bai.id = bav.attr_id
+                INNER JOIN sku_attr_value sav ON sav.value_id = bav.id
+        WHERE
+            sav.sku_id = #{skuId}
+
     </select>
 </mapper>
 

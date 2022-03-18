@@ -1,0 +1,2 @@
+com\dilo\gmall\list\client\ListFeignClient.class
+com\dilo\gmall\list\client\impl\ListDegradeFeignClient.class

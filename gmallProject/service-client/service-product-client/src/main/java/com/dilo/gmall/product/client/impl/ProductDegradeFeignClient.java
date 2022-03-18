@@ -1,9 +1,7 @@
 package com.dilo.gmall.product.client.impl;
 
 import com.dilo.gmall.common.result.Result;
-import com.dilo.gmall.model.product.BaseCategoryView;
-import com.dilo.gmall.model.product.SkuInfo;
-import com.dilo.gmall.model.product.SpuSaleAttr;
+import com.dilo.gmall.model.product.*;
 import com.dilo.gmall.product.client.ProductFeignClient;
 import org.springframework.stereotype.Component;
 
@@ -40,6 +38,16 @@ public class ProductDegradeFeignClient implements ProductFeignClient {
 
     @Override
     public Result getBaseCategoryList() {
+        return null;
+    }
+
+    @Override
+    public BaseTrademark getTradeMarkById(Long tmId) {
+        return null;
+    }
+
+    @Override
+    public List<BaseAttrInfo> getAttrList(Long skuId) {
         return null;
     }
 }

@@ -1,0 +1,2 @@
+com\dilo\gmall\common\handler\GlobalExceptionHandler.class
+com\dilo\gmall\common\interceptor\FeignInterceptor.class

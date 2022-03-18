@@ -30,6 +30,18 @@
             <artifactId>service-product-client</artifactId>
             <version>1.0</version>
         </dependency>
+
+        <dependency>
+            <artifactId>service-cart-client</artifactId>
+            <groupId>com.dilo</groupId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <artifactId>service-order-client</artifactId>
+            <groupId>com.dilo</groupId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
 

@@ -1,0 +1,9 @@
+com\dilo\gmall\user\controller\UserApiController.class
+com\dilo\gmall\user\ServiceUserApplication.class
+com\dilo\gmall\user\service\impl\UserServiceImpl.class
+com\dilo\gmall\user\service\UserService.class
+com\dilo\gmall\user\mapper\UserAddressMapper.class
+com\dilo\gmall\user\mapper\UserInfoMapper.class
+com\dilo\gmall\user\service\impl\UserAddressServiceImpl.class
+com\dilo\gmall\user\service\UserAddressService.class
+com\dilo\gmall\user\controller\PassportApiController.class

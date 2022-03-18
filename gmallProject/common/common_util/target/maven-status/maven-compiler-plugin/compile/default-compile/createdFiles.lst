@@ -1,0 +1,9 @@
+com\dilo\gmall\common\util\AuthContextHolder.class
+com\dilo\gmall\common\result\ResultCodeEnum.class
+com\dilo\gmall\common\util\HttpClientUtil.class
+com\dilo\gmall\common\util\OrderUtil.class
+com\dilo\gmall\common\util\IpUtil.class
+com\dilo\gmall\common\result\Result.class
+com\dilo\gmall\common\util\DateUtil.class
+com\dilo\gmall\common\util\MD5.class
+com\dilo\gmall\common\execption\GmallException.class

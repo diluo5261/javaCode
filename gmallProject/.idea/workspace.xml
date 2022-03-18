@@ -14,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="mybatis-mapper" />
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,33 +59,36 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/service_util/src/main/java/com/dilo/gmall/common/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service-payment/src/main/java/com/dilo/gmall/payment" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.123304546" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.side.proportion" value="0.2292683" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.dilo.gmall.product.service" />
-      <recent name="com.dilo.gmall.item.client.impl" />
-      <recent name="com.dilo.gmall.product.mapper" />
+      <recent name="com.dilo.gmall.payment.service.impl" />
+      <recent name="com.dilo.gmall.payment.mapper" />
+      <recent name="com.dilo.gmall.order.service.impl" />
+      <recent name="com.dilo.gmall.order.client.impl" />
+      <recent name="com.dilo.gmall.user.client.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Document\code\gmallProject\common\service_util\src\main\java\com\dilo\gmall\common\config" />
-      <recent name="D:\Document\code\gmallProject\web\web-all\src\main\resources" />
-      <recent name="D:\Document\code\gmallProject\common\web-util\src\main\java\com\dilo\gmall\common" />
-      <recent name="D:\Document\code\gmallProject\service\service-product\src\main\resources" />
-      <recent name="D:\Document\code\gmallProject\model\src\main\java\com\dilo\gmall\model" />
+      <recent name="D:\Document\code\gmallProject\service\service-payment\src\main\java\com\dilo\gmall\payment" />
+      <recent name="D:\Document\code\gmallProject\service\service-payment\src\main\resources" />
+      <recent name="D:\Document\code\gmallProject\common\rabbit-util\src\main\java\com\dilo\gmall\common" />
+      <recent name="D:\Document\code\gmallProject\service\service-mq\src\main\resources" />
+      <recent name="D:\Document\code\gmallProject\service\service-order\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Document\code\gmallProject" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dilo.gmall.gateway.config" />
       <recent name="com.dilo.gmall.product.mapper" />
     </key>
   </component>
@@ -96,7 +99,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceItemApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceMqApplication">
     <configuration name="ServerGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="server-gateway" />
       <extension name="coverage">
@@ -110,9 +113,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceCartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.gmall.cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.gmall.cart.ServiceCartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-item" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.gmall.item.ServiceItemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceMqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-mq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilo.gmall.mq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.gmall.mq.ServiceMqApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,20 +155,32 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.gmall.product.ServiceProductApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebAllApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="web-all" />
+    <configuration name="ServiceUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.gmall.all.*" />
+          <option name="PATTERN" value="com.dilo.gmall.user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.gmall.user.ServiceUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceWareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ware-manage" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.gmall.ware.ServiceWareApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebAllApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="web-all" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.gmall.all.WebAllApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,15 +188,21 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ServiceItemApplication" />
+      <item itemvalue="Spring Boot.WebAllApplication" />
+      <item itemvalue="Spring Boot.ServiceWareApplication" />
+      <item itemvalue="Spring Boot.ServiceUserApplication" />
+      <item itemvalue="Spring Boot.ServiceCartApplication" />
       <item itemvalue="Spring Boot.ServiceProductApplication" />
       <item itemvalue="Spring Boot.ServerGatewayApplication" />
-      <item itemvalue="Spring Boot.WebAllApplication" />
+      <item itemvalue="Spring Boot.ServiceMqApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServiceProductApplication" />
-        <item itemvalue="Spring Boot.WebAllApplication" />
+        <item itemvalue="Spring Boot.ServiceMqApplication" />
         <item itemvalue="Spring Boot.ServerGatewayApplication" />
+        <item itemvalue="Spring Boot.ServiceProductApplication" />
+        <item itemvalue="Spring Boot.ServiceCartApplication" />
+        <item itemvalue="Spring Boot.ServiceUserApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +228,15 @@
       <workItem from="1646731483868" duration="12108000" />
       <workItem from="1646786943900" duration="10194000" />
       <workItem from="1646869668114" duration="6528000" />
+      <workItem from="1646921009455" duration="667000" />
+      <workItem from="1646959253915" duration="10365000" />
+      <workItem from="1647045339520" duration="2759000" />
+      <workItem from="1647132704913" duration="22076000" />
+      <workItem from="1647218184449" duration="1778000" />
+      <workItem from="1647305509770" duration="20330000" />
+      <workItem from="1647388198504" duration="17006000" />
+      <workItem from="1647407607928" duration="32836000" />
+      <workItem from="1647563480430" duration="17227000" />
     </task>
     <servers />
   </component>
@@ -190,7 +246,7 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="org.springframework.web.method.annotation.MethodArgumentTypeMismatchException" package="org.springframework.web.method.annotation" />
           <option name="timeStamp" value="3" />
         </breakpoint>

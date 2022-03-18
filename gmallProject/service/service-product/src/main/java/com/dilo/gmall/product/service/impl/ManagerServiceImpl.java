@@ -6,7 +6,9 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dilo.gmall.common.cache.GmallCache;
+import com.dilo.gmall.common.constant.MqConst;
 import com.dilo.gmall.common.constant.RedisConst;
+import com.dilo.gmall.common.service.RabbitService;
 import com.dilo.gmall.model.product.*;
 import com.dilo.gmall.product.mapper.*;
 import com.dilo.gmall.product.service.ManagerService;
@@ -72,6 +74,12 @@ public class ManagerServiceImpl extends ServiceImpl<SpuInfoMapper,SpuInfo> imple
 
     @Autowired
     private RedissonClient redissonClient;
+
+    @Autowired
+    private BaseTrademarkMapper baseTrademarkMapper;
+
+    @Autowired
+    private RabbitService rabbitService;
 
     @Override
     public List<BaseCategory1> getCategory1() {
@@ -271,6 +279,12 @@ public class ManagerServiceImpl extends ServiceImpl<SpuInfoMapper,SpuInfo> imple
         skuInfo.setId(skuId);
         skuInfo.setIsSale(1);
         skuInfoMapper.updateById(skuInfo);
+
+        //发送一个消息到mq
+        //发送消息主体
+        rabbitService.sendMessage(MqConst.EXCHANGE_DIRECT_GOODS,MqConst.ROUTING_GOODS_UPPER,skuId);
+
+
     }
 
     @Override
@@ -279,6 +293,10 @@ public class ManagerServiceImpl extends ServiceImpl<SpuInfoMapper,SpuInfo> imple
         skuInfo.setId(skuId);
         skuInfo.setIsSale(0);
         skuInfoMapper.updateById(skuInfo);
+        //发送一个消息到mq
+        //发送一个消息到mq
+        //发送消息主体
+        rabbitService.sendMessage(MqConst.EXCHANGE_DIRECT_GOODS,MqConst.ROUTING_GOODS_LOWER,skuId);
     }
 
     @Override
@@ -543,5 +561,18 @@ public class ManagerServiceImpl extends ServiceImpl<SpuInfoMapper,SpuInfo> imple
         }
         //返回集合数据
         return list;
+    }
+
+    @Override
+    public BaseTrademark getTradeMarkById(Long tmId) {
+        BaseTrademark baseTrademark = baseTrademarkMapper.selectById(tmId);
+
+        return baseTrademark;
+    }
+
+    @Override
+    public List<BaseAttrInfo> getAttrList(Long skuId) {
+        List<BaseAttrInfo> baseAttrInfos = baseAttrInfoMapper.selectBaseAttrInfoListBySkuId(skuId);
+        return baseAttrInfos;
     }
 }

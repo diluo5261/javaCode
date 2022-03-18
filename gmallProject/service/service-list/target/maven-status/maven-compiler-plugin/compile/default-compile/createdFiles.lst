@@ -1,0 +1,5 @@
+com\dilo\gmall\list\service\impl\SearchServiceImpl.class
+com\dilo\gmall\list\ServiceListApplication.class
+com\dilo\gmall\list\service\SearchService.class
+com\dilo\gmall\list\controller\ListApiController.class
+com\dilo\gmall\list\repository\GoodsRepository.class

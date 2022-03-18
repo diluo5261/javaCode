@@ -2,6 +2,7 @@ package com.dilo.gmall.item.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.dilo.gmall.item.service.ItemService;
+import com.dilo.gmall.list.client.ListFeignClient;
 import com.dilo.gmall.model.product.BaseCategoryView;
 import com.dilo.gmall.model.product.SkuInfo;
 import com.dilo.gmall.model.product.SpuSaleAttr;
@@ -21,6 +22,9 @@ public class ItemServiceImpl implements ItemService {
     //远程调用service-client
     @Autowired
     private ProductFeignClient productFeignClient;
+
+    @Autowired
+    private ListFeignClient listFeignClient;
 
 //使用异步编排
     @Override
@@ -66,17 +70,22 @@ public class ItemServiceImpl implements ItemService {
             result.put("price",skuPrice);
         });
 
+        CompletableFuture<Void> incrHostScore = CompletableFuture.runAsync(() -> {
+            listFeignClient.incrHotScore(skuId);
+        });
+
         //使用多任务进行组合
         CompletableFuture.allOf(skuInfoCompletableFuture,
                 categoryCompletableFuture,
                 spuCompletableFuture,
                 skuCompletableFuture,
-                completableFuture).join();
+                completableFuture,
+                incrHostScore).join();
 
         return result;
     }
 
-    //为使用异步编排
+    //没有使用异步编排
     /*@Override
     public Map<String, Object> getBySkuId(Long skuId) {
         //声明对象
