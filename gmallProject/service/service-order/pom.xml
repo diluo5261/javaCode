@@ -40,6 +40,12 @@
             <version>1.0</version>
             <artifactId>rabbit-util</artifactId>
         </dependency>
+
+        <dependency>
+            <artifactId>service-payment-client</artifactId>
+            <groupId>com.dilo</groupId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
 </project>

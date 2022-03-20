@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: service-task
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.169.169:8848
+
+
+logging:
+  level:
+    com:
+      alibaba:
+        nacos:
+          client:
+            naming: WARN
+
+
+

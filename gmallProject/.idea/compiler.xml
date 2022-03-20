@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="server-gateway" />
         <module name="service-product-client" />
         <module name="ware-manage" />
         <module name="service-item-client" />
@@ -17,18 +16,23 @@
         <module name="service-order" />
         <module name="service-mq" />
         <module name="common_util" />
-        <module name="web-all" />
-        <module name="service-product" />
         <module name="service-user" />
         <module name="service-cart" />
-        <module name="web-util" />
         <module name="service-list-client" />
-        <module name="rabbit-util" />
-        <module name="service_util" />
         <module name="model" />
-        <module name="service-cart-client" />
         <module name="service-item" />
         <module name="service-payment" />
+        <module name="server-gateway" />
+        <module name="service-task" />
+        <module name="service-payment-client" />
+        <module name="service-activity-client" />
+        <module name="web-all" />
+        <module name="service-product" />
+        <module name="web-util" />
+        <module name="rabbit-util" />
+        <module name="service_util" />
+        <module name="service-cart-client" />
+        <module name="service-activity" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -44,6 +48,8 @@
       <module name="rabbit-util" options="-parameters" />
       <module name="server-gateway" options="-parameters" />
       <module name="service" options="-parameters" />
+      <module name="service-activity" options="-parameters" />
+      <module name="service-activity-client" options="-parameters" />
       <module name="service-cart" options="-parameters" />
       <module name="service-cart-client" options="-parameters" />
       <module name="service-client" options="-parameters" />
@@ -55,8 +61,10 @@
       <module name="service-order" options="-parameters" />
       <module name="service-order-client" options="-parameters" />
       <module name="service-payment" options="-parameters" />
+      <module name="service-payment-client" options="-parameters" />
       <module name="service-product" options="-parameters" />
       <module name="service-product-client" options="-parameters" />
+      <module name="service-task" options="-parameters" />
       <module name="service-user" options="-parameters" />
       <module name="service-user-client" options="-parameters" />
       <module name="service_util" options="-parameters" />

@@ -42,6 +42,12 @@
             <groupId>com.dilo</groupId>
             <version>1.0</version>
         </dependency>
+
+        <dependency>
+            <artifactId>service-activity-client</artifactId>
+            <groupId>com.dilo</groupId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
 

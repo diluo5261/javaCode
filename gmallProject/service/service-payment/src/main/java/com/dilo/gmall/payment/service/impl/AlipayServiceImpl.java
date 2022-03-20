@@ -4,8 +4,12 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
+import com.alipay.api.request.AlipayTradeCloseRequest;
 import com.alipay.api.request.AlipayTradePagePayRequest;
+import com.alipay.api.request.AlipayTradeQueryRequest;
 import com.alipay.api.request.AlipayTradeRefundRequest;
+import com.alipay.api.response.AlipayTradeCloseResponse;
+import com.alipay.api.response.AlipayTradeQueryResponse;
 import com.alipay.api.response.AlipayTradeRefundResponse;
 import com.dilo.gmall.model.enums.PaymentStatus;
 import com.dilo.gmall.model.enums.PaymentType;
@@ -106,6 +110,57 @@ public class AlipayServiceImpl implements AlipayService {
             return true;
         } else {
             System.out.println("调用失败");
+            return false;
+        }
+    }
+
+    @Override
+    public boolean closePay(Long orderId) {
+        //创建关闭对象
+        OrderInfo orderInfo = orderFeignClient.getOrderInfo(orderId);
+        AlipayTradeCloseRequest request = new AlipayTradeCloseRequest();
+        HashMap<String, Object> map = new HashMap<>();
+
+        // map.put("trade_no",paymentInfo.getTradeNo()); // 从paymentInfo 中获取！
+        map.put("out_trade_no",orderInfo.getOutTradeNo());
+        map.put("operator_id","YX01");
+        request.setBizContent(JSON.toJSONString(map));
+
+        AlipayTradeCloseResponse response = null;
+        try {
+            response = alipayClient.execute(request);
+        } catch (AlipayApiException e) {
+            e.printStackTrace();
+        }
+
+        if(response.isSuccess()){
+            System.out.println("调用成功");
+            return true;
+        } else {
+            System.out.println("调用失败");
+            return false;
+        }
+    }
+
+    @Override
+    public boolean checkPayment(Long orderId) {
+        // 根据订单Id 查询订单信息
+        OrderInfo orderInfo = orderFeignClient.getOrderInfo(orderId);
+
+        AlipayTradeQueryRequest request = new AlipayTradeQueryRequest();
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("out_trade_no",orderInfo.getOutTradeNo());
+        // 根据out_trade_no 查询交易记录
+        request.setBizContent(JSON.toJSONString(map));
+        AlipayTradeQueryResponse response = null;
+        try {
+            response = alipayClient.execute(request);
+        } catch (AlipayApiException e) {
+            e.printStackTrace();
+        }
+        if(response.isSuccess()){
+            return true;
+        } else {
             return false;
         }
     }

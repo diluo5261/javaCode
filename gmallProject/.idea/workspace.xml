@@ -59,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service-payment/src/main/java/com/dilo/gmall/payment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service-task/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.123304546" />
@@ -71,20 +71,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dilo.gmall.payment.client.impl" />
       <recent name="com.dilo.gmall.payment.service.impl" />
       <recent name="com.dilo.gmall.payment.mapper" />
       <recent name="com.dilo.gmall.order.service.impl" />
       <recent name="com.dilo.gmall.order.client.impl" />
-      <recent name="com.dilo.gmall.user.client.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Document\code\gmallProject\service\service-task\src\main\resources" />
+      <recent name="D:\Document\code\gmallProject\service\service-activity\src\main\resources" />
       <recent name="D:\Document\code\gmallProject\service\service-payment\src\main\java\com\dilo\gmall\payment" />
       <recent name="D:\Document\code\gmallProject\service\service-payment\src\main\resources" />
       <recent name="D:\Document\code\gmallProject\common\rabbit-util\src\main\java\com\dilo\gmall\common" />
-      <recent name="D:\Document\code\gmallProject\service\service-mq\src\main\resources" />
-      <recent name="D:\Document\code\gmallProject\service\service-order\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Document\code\gmallProject\service-client" />
       <recent name="D:\Document\code\gmallProject" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -99,7 +100,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceMqApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceTaskApplication">
     <configuration name="ServerGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="server-gateway" />
       <extension name="coverage">
@@ -159,15 +160,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service-user" />
+    <configuration name="ServiceTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dilo.gmall.user.*" />
+          <option name="PATTERN" value="com.dilo.gmall.task.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.gmall.user.ServiceUserApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dilo.gmall.task.ServiceTaskApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -190,19 +191,19 @@
       <item itemvalue="Spring Boot.ServiceItemApplication" />
       <item itemvalue="Spring Boot.WebAllApplication" />
       <item itemvalue="Spring Boot.ServiceWareApplication" />
-      <item itemvalue="Spring Boot.ServiceUserApplication" />
       <item itemvalue="Spring Boot.ServiceCartApplication" />
       <item itemvalue="Spring Boot.ServiceProductApplication" />
       <item itemvalue="Spring Boot.ServerGatewayApplication" />
       <item itemvalue="Spring Boot.ServiceMqApplication" />
+      <item itemvalue="Spring Boot.ServiceTaskApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServiceTaskApplication" />
         <item itemvalue="Spring Boot.ServiceMqApplication" />
         <item itemvalue="Spring Boot.ServerGatewayApplication" />
         <item itemvalue="Spring Boot.ServiceProductApplication" />
         <item itemvalue="Spring Boot.ServiceCartApplication" />
-        <item itemvalue="Spring Boot.ServiceUserApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +237,9 @@
       <workItem from="1647305509770" duration="20330000" />
       <workItem from="1647388198504" duration="17006000" />
       <workItem from="1647407607928" duration="32836000" />
-      <workItem from="1647563480430" duration="17227000" />
+      <workItem from="1647563480430" duration="17861000" />
+      <workItem from="1647651234457" duration="21955000" />
+      <workItem from="1647739644077" duration="10737000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,6 @@
 package com.dilo.gmall.order.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.dilo.gmall.cart.client.CartFeignClient;
 import com.dilo.gmall.common.result.Result;
 import com.dilo.gmall.common.util.AuthContextHolder;
@@ -10,6 +11,7 @@ import com.dilo.gmall.model.user.UserAddress;
 import com.dilo.gmall.order.service.OrderService;
 import com.dilo.gmall.product.client.ProductFeignClient;
 import com.dilo.gmall.user.client.UserFeignClient;
+import com.netflix.ribbon.proxy.annotation.Http;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
@@ -188,5 +190,25 @@ public class OrderApiController {
     @GetMapping("inner/getOrderInfo/{orderId}")
     public OrderInfo getOrderInfo(@PathVariable Long orderId){
         return orderService.getOrderInfo(orderId);
+    }
+
+    @PostMapping("orderSplit")
+    public String orderSplit(HttpServletRequest request){
+        String orderId = request.getParameter("orderId");
+        String wareSkuMap = request.getParameter("wareSkuMap");
+
+        List<OrderInfo> orderInfoList = orderService.orderSplit(orderId,wareSkuMap);
+
+        ArrayList<Map> maps = new ArrayList<>();
+        //循环遍历
+        for (OrderInfo orderInfo : orderInfoList) {
+            //orderInfo 转换为map
+            Map map = orderService.initWareOrder(orderInfo);
+            maps.add(map);
+        }
+
+        //返回数据
+        return JSON.toJSONString(maps);
+
     }
 }
